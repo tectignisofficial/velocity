@@ -18,7 +18,7 @@ $filedet=$_POST['img'];
     $id=$_GET['eid'];
     $dnk = $_POST['portImage'];
     
-    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`title`='$title',`categories`='$categories',`tag`='$tag',`file`='$filedet',`description`='$description' WHERE id='$id'");    
+    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`title`='$title',`categories`='$categories',`tag`='$tag',`file`='$file',`description`='$description' WHERE id='$id'");    
     }
    
   else if(!empty($_FILES['file']['tmp_name']) && ($_POST['img']) || !empty($_FILES['file']['tmp_name']) && (empty($_POST['img']) && ($_GET['eid']))){

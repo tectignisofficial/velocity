@@ -53,92 +53,57 @@ $id=$_GET['id'];
   <?php include "include/header.php"; ?>
 
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center section-bg">
-    <div class="container">
-      <div class="row justify-content-between gy-5">
-        <div
-          class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur
-            eveniet. Eum quas beatae cumque eum quaerat.</p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-              class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
-                Video</span></a>
-          </div>
-        </div>
-        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
-        </div>
-      </div>
-    </div>
-  </section><!-- End Hero Section -->
+
 
   <main id="main">
 
     <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu">
+    <section id="menu" class="menu mt-5">
       <div class="container" data-aos="fade-up">
-
         <div class="section-header">
           <h2>Products</h2>
           <!-- <p>Check Our <span>Yummy Menu</span></p> -->
         </div>
-
-
-
         <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
           <div class="section-header">
             <p>Check Our <span>product</span></p>
           </div>
-
           <div class="tab-pane fade active show" id="menu-starters">
-
-
-
-            <div class="row gy-5" style="justify-content: center;">
-
-                      <?php
+            <?php
                     $sql=mysqli_query($conn,"select * from products");   
                     while($arr=mysqli_fetch_array($sql)){
                     ?>
+            <div class="row">
+
               <!-- <div class="col-lg-6 col-md-6 col-12">
                 <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
                     src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
                     style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
               </div> -->
               <div class="col-lg-6 col-md-6 col-12">
-              <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-            <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
-                    src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
-                    style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-            <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
-                    src="admin/dist/img/images/<?php echo $arr['file1'] ?> " class="menu-img img-fluid"
-                    style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-            <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
-                    src="admin/dist/img/images/<?php echo $arr['file2'] ?> " class="menu-img img-fluid"
-                    style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
-            </div><!-- End testimonial item -->
-
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-            
+                <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
+                          src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
+                          style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
+                          src="admin/dist/img/images/<?php echo $arr['file1'] ?> " class="menu-img img-fluid"
+                          style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
+                    </div><!-- End testimonial item -->
+                    <div class="swiper-slide">
+                      <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
+                          src="admin/dist/img/images/<?php echo $arr['file2'] ?> " class="menu-img img-fluid"
+                          style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
+                    </div><!-- End testimonial item -->
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
               </div>
               <!-- Menu Item -->
-              <div class="col-lg-6 col-md-6 col-12menu-item">
+              <div class="col-lg-6 col-md-6 col-12">
                 <ul>
                   <h2 class="product-title"> <a
                       href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['product_name'];?></a>
@@ -166,9 +131,9 @@ $id=$_GET['id'];
                   <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['description'];?></a>
                 </p>
               </div>
-            </div>  
-
+            </div>
             <?php } ?>
+
           </div><!-- End Starter Menu Content -->
 
 
