@@ -51,11 +51,6 @@ if(isset($_GET['gen'])){
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-  <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-    </div>
-    
   <!-- Navbar -->
   <?php include("include/header.php"); ?>
 
@@ -106,14 +101,13 @@ if(isset($_GET['gen'])){
                                                 <th>Name</th>
                                                 <th>phone</th>
                                                 <th>Email</th>
-                                                <th>Subject</th>
-                                                 <th>Message</th>
+                                                 <th>Description</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         <?php 
                         
-                        $sql=mysqli_query($conn,"select * from `contact_us`");
+                        $sql=mysqli_query($conn,"select * from `contact`");
                      $count=1;
                          while($arr=mysqli_fetch_array($sql)){
                         ?>
@@ -122,8 +116,7 @@ if(isset($_GET['gen'])){
                                                 <td> <?php echo $arr['name'];?> </td>
                                                 <td><?php echo $arr['phone'];?></td>
                                                 <td> <?php echo $arr['email'];?></td>
-                                                <td> <?php echo $arr['subject'];?></td>
-                                                <td> <?php echo $arr['message'];?></td>
+                                                <td> <?php echo $arr['description'];?></td>
                                                   <a href="contact_us.php?gen=<?php echo $arr['id'];?>">
                                              
                          </a>

@@ -1,3 +1,29 @@
+<?php include("include/config.php");
+
+
+if(isset($_POST['submit']))
+{
+  $name = $_POST['name'];
+  $phone = $_POST['phone'];
+  $email = $_POST['email'];
+  $description = $_POST['description'];
+
+  $query = "INSERT INTO `contact`(`name`, `phone`, `email`, `description`) VALUES ('$name','$phone',' $email','$description')";
+  
+  $data = mysqli_query($conn,$query);
+
+  if($data)
+  {
+    echo "data inserted";
+  }
+  else
+  {
+    echo "failed";
+  }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,19 +80,11 @@ input[type=number] {
 
 <?php include "include/header.php"; ?>
 
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center section-bg">
-    <div class="container">
-     
-    </div>
-  </section><!-- End Hero Section -->
-
   <main id="main">
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+      <div class="container " data-aos="fade-up" style="margin-top:3%">
 
         <div class="section-header">
           <h2>Contact Us</h2>
@@ -120,27 +138,22 @@ input[type=number] {
 
         </div>
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <form  method="POST" class="php-email-form p-3 p-md-4">
           <div class="row">
             <div class="col-xl-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
             </div>
             <div class="col-xl-6 form-group">
-              <input type="number" class="form-control" name="number" id="number" placeholder="Phone Number" maxlength="10" minlength="10" required>
+              <input type="number" class="form-control" name="phone" id="phone" placeholder="Phone Number" maxlength="10" minlength="10" required>
             </div>
           </div>
           <div class="col-xl-12 form-group">
               <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
             </div>
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Description" required></textarea>
+            <textarea class="form-control" name="description" rows="4" placeholder="Description" required></textarea>
           </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="text-center"><button type="submit"  value="submit" name="submit">Send Message</button></div>
         </form>
         <!--End Contact Form -->
 
@@ -165,7 +178,7 @@ input[type=number] {
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
