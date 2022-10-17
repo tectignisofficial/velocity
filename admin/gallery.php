@@ -3,7 +3,6 @@ include("include/config.php");
 
 if(isset($_POST['submitt'])){
 $title=$_POST['title'];
-$description=$_POST['description'];
 $file=$_FILES['file']['name'];
 $tmp_name = $_FILES['file']['tmp_name']; 
 $loc="dist/img/images/".$file;
@@ -15,17 +14,17 @@ $filedet=$_POST['img'];
     $id=$_GET['id'];
     $dnk = $_POST['portImage'];
     
-    $sql=mysqli_query($conn,"UPDATE `gallery` SET `title`='$title',`file`='$filedet',`description`='$description' WHERE id='$id'");    
+    $sql=mysqli_query($conn,"UPDATE `gallery` SET `title`='$title',`file`='$filedet' WHERE id='$id'");    
     }
    
   else if(!empty($_FILES['file']['tmp_name']) && ($_POST['imgg']) || !empty($_FILES['file']['tmp_name']) && (empty($_POST['imgg']) && ($_GET['id']))){
     $id=$_GET['id'];
 move_uploaded_file($tmp_name, $loc);
-    $sql=mysqli_query($conn,"UPDATE `gallery` SET `title`='$title',`file`='$file',`description`='$description' WHERE id='$id'");    
+    $sql=mysqli_query($conn,"UPDATE `gallery` SET `title`='$title',`file`='$file' WHERE id='$id'");    
     }else{
 
 move_uploaded_file($tmp_name, $loc);
-$sql=mysqli_query($conn,"INSERT INTO `gallery`(`title`,`file`, `description`) VALUES ('$title','$file','$description')");}
+$sql=mysqli_query($conn,"INSERT INTO `gallery`(`title`,`file`) VALUES ('$title','$file')");}
   
   if($sql==1){
      header("location:gallery.php");
@@ -49,14 +48,11 @@ if(isset($_GET['delid'])){
 $productt_name='';
 $title='';
 $file='';
-$description='';
 if(isset($_GET['id'])){
   $sql=mysqli_query($conn,"select * from gallery where id='$_GET[id]'");
   $row=mysqli_fetch_array($sql);
-  $productt_name=$row['productt_name'];
   $title=$row['title'];
   $file=$row['file'];
-  $description=$row['description'];
 }
   
 ?>
@@ -205,13 +201,7 @@ if(isset($_GET['id'])){
                             <input type="file" class="form-control" name="file">
                           </div>
                         </div>
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label"><b>Description</b></label>
-                          <div class="col-sm-9">
-                            <textarea class="form-control" placeholder="Description" id="exampleFormControlTextarea5"
-                              rows="3" name="description" required><?php echo $description;?></textarea>
-                          </div>
-                        </div>
+
                       </div>
                     </div>
                     <input type="submit" class="btn btn-primary btn-icon-text" value="Submitt" name="submitt">
@@ -221,7 +211,7 @@ if(isset($_GET['id'])){
               </div>
             </div>
           </div>
-          <?php
+                                                <?php
                                                   $selectquery="select * from gallery";
                                                   $portfolio = mysqli_query($conn,$selectquery);
                                                   if (mysqli_num_rows($portfolio)>0){
@@ -240,7 +230,6 @@ if(isset($_GET['id'])){
                           <th>Sr.No</th>
                           <th>Product Name</th>
                           <th>Image</th>
-                          <th>Description</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -258,9 +247,6 @@ if(isset($_GET['id'])){
                           </td>
 
                           <td><img src="dist/img/images/<?php echo $row["file"]; ?>"></td>
-                          <td>
-                            <?php echo $row["description"]; ?>
-                          </td>
                           <td>
                             <a class="btn btn-primary btn-rounded btn-icon"
                               href="gallery.php?id=<?php echo $row['id']; ?>" title="Edit Blog"><i
