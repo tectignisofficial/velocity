@@ -1,5 +1,6 @@
-<?php include("include/config.php");?>
-
+<?php include("include/config.php");
+$id=$_GET['id'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,6 +40,11 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+  .product li {
+    padding-right: 100px;
+  }
+</style>
 
 <body>
 
@@ -94,24 +100,46 @@
 
             <div class="row gy-5" style="justify-content: center;">
 
-              <?php
-            $sql=mysqli_query($conn,"select * from products");   
-            while($arr=mysqli_fetch_array($sql)){
-            ?>
-              <div class="col-lg-4 menu-item ">
+                      <?php
+                    $sql=mysqli_query($conn,"select * from products");   
+                    while($arr=mysqli_fetch_array($sql)){
+                    ?>
+              <div class="col-lg-6 col-md-6 col-12">
                 <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
                     src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
-                    style="height:300px; width:415px ; border-radius: 5%;" alt="product"></a>
-                <h5 class="product-title"> <a
-                    href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['product_name'];?></a>
-                </h5>
-
+                    style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
               </div><!-- Menu Item -->
+              <div class="col-lg-6 col-md-6 col-12menu-item">
+                <ul>
+                  <h2 class="product-title"> <a
+                      href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['product_name'];?></a>
+                  </h2>
+                  <p style="mt-3 mb-3"> <a
+                      href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['title'];?></a>
+                  </p>
+                  <li class="d-flex">
+                    <label for="">Categories:</label>
+                    <p style="margin-left:10px">
+                      <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['categories'];?></a>
+                    </p>
+                  </li>
+                  <li class="d-flex">
+                    <label for="">Tags:</label>
+                    <p style="margin-left:10px">
+                      <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['tag'];?></a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-12 col-md-12 col-12">
+                <label for="">Description:</label>
+                <p>
+                  <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['description'];?></a>
+                </p>
+              </div>
+            </div>  
 
-
-              <?php } ?>
-
-            </div>
+            <?php } ?>
           </div><!-- End Starter Menu Content -->
 
 

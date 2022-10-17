@@ -3,6 +3,9 @@ include("include/config.php");
 
 if(isset($_POST['submit'])){
 $product_name=$_POST['product_name'];
+$title=$_POST['title'];
+$categories=$_POST['categories'];
+$tag=$_POST['tag'];
 $description=$_POST['description'];
 $file=$_FILES['file']['name'];
 $tmp_name = $_FILES['file']['tmp_name']; 
@@ -15,17 +18,17 @@ $filedet=$_POST['img'];
     $id=$_GET['eid'];
     $dnk = $_POST['portImage'];
     
-    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`file`='$filedet',`description`='$description' WHERE id='$id'");    
+    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`title`='$title',`categories`='$categories',`tag`='$tag',`file`='$filedet',`description`='$description' WHERE id='$id'");    
     }
    
   else if(!empty($_FILES['file']['tmp_name']) && ($_POST['img']) || !empty($_FILES['file']['tmp_name']) && (empty($_POST['img']) && ($_GET['eid']))){
     $id=$_GET['eid'];
 move_uploaded_file($tmp_name, $loc);
-    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`file`='$file',`description`='$description' WHERE id='$id'");    
+    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`title`='$title',`categories`='$categories',`tag`='$tag',`file`='$file',`description`='$description' WHERE id='$id'");    
     }else{
 
 move_uploaded_file($tmp_name, $loc);
-$sql=mysqli_query($conn,"INSERT INTO `products`(`product_name`,`file`, `description`) VALUES ('$product_name','$file','$description')");}
+$sql=mysqli_query($conn,"INSERT INTO `products`(`product_name`,`title`,`categories`,`tag`,`file`, `description`) VALUES ('$product_name','$title','$categories','$tag','$file','$description')");}
   
   if($sql==1){
      header("location:products.php");
@@ -47,6 +50,9 @@ if(isset($_GET['delid'])){
 }
 
 $product_name='';
+$title='';
+$categories='';
+$tag='';
 $description='';
 $file='';
 $description='';
@@ -54,6 +60,9 @@ if(isset($_GET['eid'])){
   $sql=mysqli_query($conn,"select * from products where id='$_GET[eid]'");
   $row=mysqli_fetch_array($sql);
   $product_name=$row['product_name'];
+  $title=$row['title'];
+  $categories=$row['categories'];
+  $tag=$row['tag'];
   $description=$row['description'];
   $file=$row['file'];
   $description=$row['description'];
@@ -192,6 +201,29 @@ if(isset($_GET['eid'])){
                           </div>
                         </div>
 
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label"><b>Title</b></label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="title" placeholder="Title"
+                              value="<?php echo $title; ?> " required>
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label"><b>Categories</b></label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="categories" placeholder="categories"
+                              value="<?php echo $categories; ?> " required>
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label"><b>Tag</b></label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="tag" placeholder="Tag"
+                              value="<?php echo $tag; ?> " required>
+                          </div>
+                        </div>
 
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Upload Image</b></label>
@@ -239,6 +271,9 @@ if(isset($_GET['eid'])){
                         <tr>
                           <th>Sr.No</th>
                           <th>Product Name</th>
+                          <th>Title</th>
+                          <th>Categories</th>
+                          <th>Tags</th>
                           <th>Image</th>
                           <th>Description</th>
                           <th>Action</th>
@@ -256,7 +291,14 @@ if(isset($_GET['eid'])){
                           <td>
                             <?php echo $row["product_name"]; ?>
                           </td>
-
+                          <td>
+                            <?php echo $row["title"]; ?>
+                          </td>
+                          <td>
+                            <?php echo $row["categories"]; ?>
+                          </td> <td>
+                            <?php echo $row["tag"]; ?>
+                          </td>
                           <td><img src="dist/img/images/<?php echo $row["file"]; ?>"></td>
                           <td>
                             <?php echo $row["description"]; ?>
