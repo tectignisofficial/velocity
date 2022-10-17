@@ -125,7 +125,7 @@ $id=$_GET['id'];
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-12 col-md-12 col-12">
+              <div class="col-lg-12 col-md-12 col-12 mt-3">
                 <label for="">Description:</label>
                 <p>
                   <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['description'];?></a>

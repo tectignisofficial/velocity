@@ -6,9 +6,10 @@ if(isset($_POST['submit']))
   $name = $_POST['name'];
   $phone = $_POST['phone'];
   $email = $_POST['email'];
+  $subject = $_POST['subject'];
   $description = $_POST['description'];
 
-  $query = "INSERT INTO `contact`(`name`, `phone`, `email`, `description`) VALUES ('$name','$phone',' $email','$description')";
+  $query = "INSERT INTO `contact`(`name`, `phone`, `email`,`subject`, `description`) VALUES ('$name','$phone',' $email','subject','$description')";
   
   $data = mysqli_query($conn,$query);
 
@@ -144,16 +145,22 @@ input[type=number] {
               <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
             </div>
             <div class="col-xl-6 form-group">
-              <input type="number" class="form-control" name="phone" id="phone" placeholder="Phone Number" maxlength="10" minlength="10" required>
+              <input type="text" class="form-control phone1" name="phone" id="phone1" placeholder="Phone Number" maxlength="10" minlength="10" required>
+              <span id="phone1Span" class="mb-4"></span>
             </div>
           </div>
-          <div class="col-xl-12 form-group">
+          <div class="row">
+          <div class="col-xl-6 form-group">
               <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
             </div>
+            <div class="col-xl-6 form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+           </div>
           <div class="form-group">
             <textarea class="form-control" name="description" rows="4" placeholder="Description" required></textarea>
           </div>
-          <div class="text-center"><button type="submit"  value="submit" name="submit">Send Message</button></div>
+          <div class="text-center"><button type="submit"  value="submit" name="submit" id="submit">Send Message</button></div>
         </form>
         <!--End Contact Form -->
 
@@ -178,11 +185,55 @@ input[type=number] {
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+	<script>
+		
+             $("#phone1Span").hide();
+	    $(".phone1").keyup(function(){
+	     mobile_check();
+	   });
+	   function mobile_check(){
+		   let mobileno=$(".phone1").val();
+		   let vali =/^\d{10}$/; 
+		   if(!vali.test(mobileno)){
+        validenqtMobile="no";
+			    $("#phone1Span").show().html("*Invalid Mobile No").css("color","red").focus();
+				mobile_err=false;
+			 return false;
+		   }
+		   else{
+        validenqtMobile="yes";
+		       $("#phone1Span").hide(); 
+		   }
+	   }
 
+	   $("#submit").click(function(){
+       mobile_err=true;
+             mobile_check();
+			   
+			   if((mobile_err=true)){
+			      return true;
+			   }
+			   else{return false;}
+		  });
+
+        let  validenqtMobile;
+
+ let submitenant = document.getElementById("submit");
+     submitenant.addEventListener("click", function(){
+
+     if(validenqtMobile == "no"){
+         swal("Oops...", "Please fill all the fields", "error");
+     }
+         else{
+             swal("Saved!", " Thank you for contacting form submitted successfully", "success");
+         }
+     });
+        </script>
 </body>
 
 </html>
