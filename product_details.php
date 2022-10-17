@@ -104,11 +104,40 @@ $id=$_GET['id'];
                     $sql=mysqli_query($conn,"select * from products");   
                     while($arr=mysqli_fetch_array($sql)){
                     ?>
-              <div class="col-lg-6 col-md-6 col-12">
+              <!-- <div class="col-lg-6 col-md-6 col-12">
                 <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
                     src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
                     style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
-              </div><!-- Menu Item -->
+              </div> -->
+              <div class="col-lg-6 col-md-6 col-12">
+              <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+            <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
+                    src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
+                    style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+            <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
+                    src="admin/dist/img/images/<?php echo $arr['file1'] ?> " class="menu-img img-fluid"
+                    style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+            <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
+                    src="admin/dist/img/images/<?php echo $arr['file2'] ?> " class="menu-img img-fluid"
+                    style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
+            </div><!-- End testimonial item -->
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+            
+              </div>
+              <!-- Menu Item -->
               <div class="col-lg-6 col-md-6 col-12menu-item">
                 <ul>
                   <h2 class="product-title"> <a

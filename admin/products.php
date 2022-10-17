@@ -237,10 +237,36 @@ if(isset($_GET['eid'])){
                             <input type="file" class="form-control" name="file">
                           </div>
                         </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label"><b>Upload Image 1</b></label>
+                          <div class="col-sm-9">
+                            <?php
+                            if(isset($_GET['eid'])){
+                              ?>
+                            <img src="dist/img/images/<?php echo $file; ?>" width="200" height="200">
+                            <input type="hidden" value="<?php echo $file; ?>" name="img1">
+                            <?php }  ?>
+                            <input type="file" class="form-control" name="file1">
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label"><b>Upload Image 2</b></label>
+                          <div class="col-sm-9">
+                            <?php
+                            if(isset($_GET['eid'])){
+                              ?>
+                            <img src="dist/img/images/<?php echo $file; ?>" width="200" height="200">
+                            <input type="hidden" value="<?php echo $file; ?>" name="img">
+                            <?php }  ?>
+                            <input type="file" class="form-control" name="file2">
+                          </div>
+                        </div>
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Description</b></label>
                           <div class="col-sm-9">
-                            <textarea class="form-control" placeholder="Description" id="exampleFormControlTextarea5"
+                            <textarea id="summernote" style="display:none" placeholder="Description" id="exampleFormControlTextarea5"
                               rows="3" name="description" required><?php echo $description;?></textarea>
                           </div>
                         </div>
@@ -414,7 +440,7 @@ if(isset($_GET['eid'])){
   <script src="dist/js/adminlte.min.js"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="dist/js/demo.js"></script>
-
+  <script src="plugins/summernote/summernote-bs4.min.js"></script>
   <!-- Page specific script -->
   <script>
     $(function () {
@@ -566,7 +592,18 @@ if(isset($_GET['eid'])){
       });
     });
   </script>
+<script>
+  $(function () {
+    // Summernote
+    $('#summernote').summernote()
 
+    // CodeMirror
+    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+      mode: "htmlmixed",
+      theme: "monokai"
+    });
+  })
+</script>
 </body>
 
 </html>
