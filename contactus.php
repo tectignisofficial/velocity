@@ -146,8 +146,8 @@ input[type=number] {
               <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
             </div>
             <div class="col-xl-6 form-group">
-              <input type="text" class="form-control phone1" name="phone" id="phone1" placeholder="Phone Number" maxlength="10" minlength="10" required>
-              <span id="phone1Span" class="mb-4"></span>
+              <input type="number" class="form-control phone1" name="phone" id="phone" placeholder="Phone Number" onkeyup="check(); return false;" required>
+              <span id="message"></span>
             </div>
           </div>
           <div class="row">
@@ -193,35 +193,27 @@ input[type=number] {
   <script src="assets/js/main.js"></script>
 	<script>
 		
-             $("#phone1Span").hide();
-	    $(".phone1").keyup(function(){
-	     mobile_check();
-	   });
-	   function mobile_check(){
-		   let mobileno=$(".phone1").val();
-		   let vali =/^\d{10}$/; 
-		   if(!vali.test(mobileno)){
-        validenqtMobile="no";
-			    $("#phone1Span").show().html("*Invalid Mobile No").css("color","red").focus();
-				mobile_err=false;
-			 return false;
-		   }
-		   else{
-        validenqtMobile="yes";
-		       $("#phone1Span").hide(); 
-		   }
-	   }
+    function check()
+{
 
-	   $("#submit").click(function(){
-       mobile_err=true;
-             mobile_check();
-			   
-			   if((mobile_err=true)){
-			      return true;
-			   }
-			   else{return false;}
-		  });
+    var mobile = document.getElementById('phone').value;
+   
+    
+    var message = document.getElementById('message');
 
+   var goodColor = "#0C6";
+    var badColor = "#FF9B37";
+  
+    if(mobile.length!=10){
+       
+        // mobile.style.backgroundColor = badColor;
+        // message.style.color = badColor;
+        message.innerHTML = "Please Enter 10 digit number!"
+    }
+    else{
+      message.innerHTML = ""
+    }
+  }
         let  validenqtMobile;
 
  let submitenant = document.getElementById("submit");
