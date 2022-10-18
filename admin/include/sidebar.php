@@ -4,7 +4,8 @@ $page=substr($_SERVER['SCRIPT_NAME'],strrpos($_SERVER['SCRIPT_NAME'],"/")+1);
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="index3.html" class="brand-link">
-     <img src="../assets\img\logo\footer_logo.png" width="80%" class="rounded pl-3 ml-3" alt="">
+        <h2  class="text-center">Velocity</h2>
+     <!-- <img src="../assets\img\logo\footer_logo.png" width="80%" class="rounded pl-3 ml-3" alt=""> -->
       </a>
 
       <!-- Sidebar -->
