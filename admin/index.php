@@ -116,11 +116,11 @@ include('include/config.php');
               <div class="info-box mb-3">
                 <span class="info-box-icon bg-success elevation-1"><i class="fa fa-check"></i></span>
                 <?php
-              $query=mysqli_query($conn,"select * from add_categories");
+              $query=mysqli_query($conn,"select * from gallery");
                $count3=mysqli_num_rows($query);
                 ?>
                 <div class="info-box-content">
-                  <span class="info-box-text">Categories</span>
+                  <span class="info-box-text">Gallery</span>
                   <span class="info-box-number"><?php echo $count3; ?></span>
                 </div>
                 <!-- /.info-box-content -->
@@ -132,7 +132,7 @@ include('include/config.php');
               <div class="info-box mb-3">
                 <span class="info-box-icon bg-warning elevation-1"><i class=" text-white fa fa-phone"></i></span>
                 <?php
-              $query=mysqli_query($conn,"select * from contact_us");
+              $query=mysqli_query($conn,"select * from contact");
                $count4=mysqli_num_rows($query);
                 ?>
                 <div class="info-box-content">

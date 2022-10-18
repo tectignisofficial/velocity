@@ -76,7 +76,7 @@
               ?>
 
               <div class="col-sm-3 menu-item ">
-                <a class="glightbox" href="gallery.php?id=<?php echo $arr['id'] ?>"><img
+                <a class="glightbox" href="admin/dist/img/images/<?php echo $arr['file'] ?> "><img
                     src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
                     style="height:300px; width:415px ; border-radius: 5%;" alt="product"></a>
                 <!-- <h5 class="product-title"> <a

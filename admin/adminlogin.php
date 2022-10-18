@@ -1,11 +1,11 @@
 <?php
 session_start();
-include("../assets/include/config.php");
+include("include/config.php");
 if(isset($_POST['login'])){
 $email=$_POST['email'];
 $password1=$_POST['password'];
 
-$sql=mysqli_query($conn,"select * from admin_login where email='$email'");
+$sql=mysqli_query($conn,"select * from adminlogin where email='$email'");
 $row=mysqli_fetch_array($sql);
 
 if($row>0){
@@ -88,8 +88,9 @@ border-bottom-right-radius: .3rem;
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
-                  <img src="../assets\img\logo\LOGO.png"
-                    style="width:60%;" alt="logo">
+                 <h2 style="color:#F73614"> Velocity Exim Goods</h2>
+                  <!-- <img src="../assets\img\logo\LOGO.png" -->
+                    <!-- style="width:60%;" alt="logo"> -->
                     <!-- <h6>UNIQUE PATHOLOGY</h6> -->
                 </div><br>
 
@@ -111,7 +112,7 @@ border-bottom-right-radius: .3rem;
                   <div class="text-center pt-1 mb-5 pb-1">
                     <button class="btn btn-block mb-3" type="login" name="login" id="login" value="login" style="background:#f73614; color:white">Login</button>
                     <br>
-                    <a class="text-muted" href="forgetpassword.php">Forgot password?</a>
+                    <!-- <a class="text-muted" href="forgetpassword.php">Forgot password?</a> -->
                   </div>
                 </form>
 

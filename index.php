@@ -1,3 +1,4 @@
+<?php include("include/config.php");?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,32 +75,21 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;" data-aos="fade-up" data-aos-delay="150">
-            <div class="call-us position-absolute">
-              <h4>Book a Table</h4>
-              <p>+1 5589 55488 55</p>
-            </div>
+          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/aboutus.webp) ;border-radius:5%; height:20%" data-aos="fade-up" data-aos-delay="150">
+           
           </div>
-          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-6 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                  KINAL stands for extremes in Fortune, Happiness and Spirituality. The Team at Kinal Global Care (KGC) believes that "to care is to be committed". And caring for human well being makes it even more challenging in the current scenario of environmental hazards and dynamic lifestyle of today's generation. We would like to show our care by providing the quality products in Spices and Herbs Industry which are needed by the world.
+                  KGC is formed with an objective of supplying the best quality Spices, Herbs, Agro Commodities, Fruits and Vegetables in whatever India is good at producing. We have two divisions. Spices, Herbs, Agro Commodities division and Fruits and Vegetables division. Both divisions are headed by experienced individuals who are well versed in the respective divisions with huge passion to serve the global market with lot of care. 
+                </p>
+                <p>
+                  We are a group of people who have vast experience in the corporate sector and started with passion towards our vision and mission by strictly following our core values. We are a proud team who have similar thoughts and worked in various backgrounds like Manufacturing, Sales and Marketing, Human Resources and have vast experience in exports. We believe in doing it right in whatever you believe.
+                  The team in Kinal are high class professionals with immense passion and deep understanding about the sourcing, processing, packing and shipping. We understand the reality and wanted to arrest the challenges faced by importers in this industry across the globe. 
+                  </p>
               </p>
-
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
-              </div>
             </div>
           </div>
         </div>
@@ -108,7 +98,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
+    <!-- <section id="why-us" class="why-us section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
@@ -124,7 +114,7 @@
                 <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
-          </div><!-- End Why Box -->
+          </div>
 
           <div class="col-lg-8 d-flex align-items-center">
             <div class="row gy-4">
@@ -135,7 +125,7 @@
                   <h4>Corporis voluptates officia eiusmod</h4>
                   <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
                 </div>
-              </div><!-- End Icon Box -->
+              </div>
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
@@ -143,7 +133,7 @@
                   <h4>Ullamco laboris ladore pan</h4>
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                 </div>
-              </div><!-- End Icon Box -->
+              </div>
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
@@ -151,7 +141,7 @@
                   <h4>Labore consequatur incidid dolore</h4>
                   <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                 </div>
-              </div><!-- End Icon Box -->
+              </div>
 
             </div>
           </div>
@@ -159,7 +149,8 @@
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section> -->
+    <!-- End Why Us Section -->
 
     <!-- ======= Stats Counter Section ======= -->
     <section id="stats-counter" class="stats-counter">
@@ -201,7 +192,7 @@
     </section><!-- End Stats Counter Section -->
 
     <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu">
+    <!-- <section id="menu" class="menu">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -215,24 +206,24 @@
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
               <h4>Starters</h4>
             </a>
-          </li><!-- End tab nav item -->
+          </li>
 
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
               <h4>Breakfast</h4>
-            </a><!-- End tab nav item -->
+            </a>
 
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
               <h4>Lunch</h4>
             </a>
-          </li><!-- End tab nav item -->
+          </li>
 
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
               <h4>Dinner</h4>
             </a>
-          </li><!-- End tab nav item -->
+          </li>
 
         </ul>
 
@@ -254,7 +245,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
 
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
@@ -262,7 +253,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
@@ -270,7 +261,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
@@ -278,7 +269,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
@@ -286,7 +277,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
@@ -294,10 +285,10 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
             </div>
-          </div><!-- End Starter Menu Content -->
+          </div>
 
           <div class="tab-pane fade" id="menu-breakfast">
 
@@ -315,7 +306,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
 
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
@@ -323,7 +314,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
@@ -331,7 +322,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
@@ -340,7 +331,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
 
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
@@ -348,7 +339,7 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
@@ -356,10 +347,10 @@
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
             </div>
-          </div><!-- End Breakfast Menu Content -->
+          </div>
 
           <div class="tab-pane fade" id="menu-lunch">
 
@@ -377,7 +368,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
 
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
@@ -386,7 +377,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
 
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
@@ -395,7 +386,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
 
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
@@ -404,7 +395,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
 
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
@@ -413,7 +404,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
 
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
@@ -422,10 +413,10 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
 
-              </div><!-- Menu Item -->
+              </div>
 
             </div>
-          </div><!-- End Lunch Menu Content -->
+          </div>
 
           <div class="tab-pane fade" id="menu-dinner">
 
@@ -445,7 +436,7 @@
                 <p class="price">
                   $5.95
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
@@ -456,7 +447,7 @@
                 <p class="price">
                   $14.95
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
@@ -467,7 +458,7 @@
                 <p class="price">
                   $8.95
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
@@ -478,7 +469,7 @@
                 <p class="price">
                   $12.95
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
@@ -489,7 +480,7 @@
                 <p class="price">
                   $12.95
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
@@ -500,15 +491,16 @@
                 <p class="price">
                   $9.95
                 </p>
-              </div><!-- Menu Item -->
+              </div>
 
             </div>
-          </div><!-- End Dinner Menu Content -->
+          </div>
 
         </div>
 
       </div>
-    </section><!-- End Menu Section -->
+    </section> -->
+    <!-- End Menu Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -626,7 +618,7 @@
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
+    <!-- <section id="events" class="events">
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-header">
@@ -643,7 +635,7 @@
               <p class="description">
                 Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
               </p>
-            </div><!-- End Event item -->
+            </div>
 
             <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
               <h3>Private Parties</h3>
@@ -651,7 +643,7 @@
               <p class="description">
                 In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.
               </p>
-            </div><!-- End Event item -->
+            </div>
 
             <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
               <h3>Birthday Parties</h3>
@@ -659,17 +651,18 @@
               <p class="description">
                 Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
               </p>
-            </div><!-- End Event item -->
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Events Section -->
+    </section> -->
+    <!-- End Events Section -->
 
     <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs section-bg">
+    <!-- <section id="chefs" class="chefs ">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -696,7 +689,7 @@
                 <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
+          </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="chef-member">
@@ -715,7 +708,7 @@
                 <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
+          </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="chef-member">
@@ -734,15 +727,16 @@
                 <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
+          </div>
 
         </div>
 
       </div>
-    </section><!-- End Chefs Section -->
+    </section> -->
+    <!-- End Chefs Section -->
 
     <!-- ======= Book A Table Section ======= -->
-    <section id="book-a-table" class="book-a-table">
+    <!-- <section id="book-a-table" class="book-a-table">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -793,33 +787,34 @@
               </div>
               <div class="text-center"><button type="submit">Book a Table</button></div>
             </form>
-          </div><!-- End Reservation Form -->
+          </div>
 
         </div>
 
       </div>
-    </section><!-- End Book A Table Section -->
+    </section> -->
+    <!-- End Book A Table Section -->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery section-bg mb-5">
+    <section id="gallery" class="gallery  mb-5">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
           <h2>gallery</h2>
           <p>Check <span>Our Gallery</span></p>
         </div>
-
+  
         <div class="gallery-slider swiper">
+          
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
-          </div>
+          <?php
+              $sql=mysqli_query($conn,"select * from gallery");   
+              while($arr=mysqli_fetch_array($sql)){
+              ?>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="admin/dist/img/images/<?php echo $arr['file'] ?>"><img src="admin/dist/img/images/<?php echo $arr['file'] ?>"  style="height:300px; width:415px ; border-radius: 5%;" class="img-fluid" alt=""></a></div>
+
+            <?php } ?>
+            </div>
           <div class="swiper-pagination"></div>
         </div>
 

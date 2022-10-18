@@ -61,7 +61,7 @@
 
         <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
           <div class="section-header">
-            <p>Check Our <span>product</span></p>
+            <p>Check Our <span>Product</span></p>
           </div>
 
           <div class="tab-pane fade active show" id="menu-starters">
@@ -75,7 +75,7 @@
             while($arr=mysqli_fetch_array($sql)){
             ?>
               <div class="col-lg-4 menu-item ">
-                <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
+                <a class="glightbox" href="admin/dist/img/images/<?php echo $arr['file'] ?>"><img
                     src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
                     style="height:300px; width:415px ; border-radius: 5%;" alt="product"></a>
                 <h5 class="product-title"> <a

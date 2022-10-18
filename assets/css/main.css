@@ -87,7 +87,7 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 400;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
 }
 
 .section-header p span {
@@ -473,6 +473,15 @@ section {
 # Mobile Navigation
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
+.header .logo h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  font-family: var(--font-secondary);
+}
+}
+@media (max-width: 1279px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -503,7 +512,7 @@ section {
     justify-content: space-between;
     padding: 10px 20px;
     font-family: var(--font-secondary);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.8);
     font-size: 16px;
     font-weight: 600;
     color: #7f7f90;
@@ -1392,6 +1401,7 @@ section {
   background: #f4f4f4;
   padding: 30px;
   height: 100%;
+  border-radius: 10px;
 }
 
 .contact .info-item .icon {
@@ -1490,7 +1500,7 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 2;
   box-shadow: none;
   font-size: 14px;
 }
@@ -1547,7 +1557,7 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   color: var(--color-secondary);
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
 }
 
 .hero h2 span {
