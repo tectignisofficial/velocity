@@ -20,6 +20,7 @@ $page=substr($_SERVER['SCRIPT_NAME'],strrpos($_SERVER['SCRIPT_NAME'],"/")+1);
           <li><a class="nav-link <?= $page == 'index.php' ? 'active':'' ?>" href="index.php">Home</a></li>
           <li><a class="nav-link <?= $page == 'products.php' ? 'active':'' ?>" href="products.php">Products</a></li>
           <li><a class="nav-link <?= $page == 'gallery.php' ? 'active':'' ?>" href="gallery.php">Gallery</a></li>
+          <li><a class="nav-link <?= $page == 'certificate.php' ? 'active':'' ?>" href="certificate.php">Certificate</a></li>
           <li><a class="nav-link <?= $page == 'aboutus.php' ? 'active':'' ?>" href="aboutus.php">About</a></li>
           <li><a class="nav-link <?= $page == 'contactus.php' ? 'active':'' ?>" href="contactus.php">Contact Us</a></li>
         </ul>

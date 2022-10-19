@@ -44,6 +44,16 @@ $id=$_GET['id'];
   .product li {
     padding-right: 100px;
   }
+
+  a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
 </style>
 
 <body>
@@ -66,11 +76,11 @@ $id=$_GET['id'];
         </div>
         <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
           <div class="section-header">
-            <p>Check Our <span>product</span></p>
+            <p>Check Our <span>Product</span></p>
           </div>
           <div class="tab-pane fade active show" id="menu-starters">
             <?php
-                    $sql=mysqli_query($conn,"select * from products");   
+                    $sql=mysqli_query($conn,"select * from products where id='$id'");   
                     while($arr=mysqli_fetch_array($sql)){
                     ?>
             <div class="row">
