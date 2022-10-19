@@ -8,7 +8,7 @@
       <!-- <i class="bi bi-geo-alt icon"></i> -->
       <div>
         <h3>Velocity Exim Goods.</h3>
-        <p> The Team at Kinal Global Care (KGC) believes that "to care is to be committed".</p>
+        <p> Dry Fruits are also rich source of Calcium, Copper, Iron, Magnesium, Potassium, Phosphorus, Protein, Riboflavin, Vitamin A-C-E-K-B6 and Zinc. This means healthy bones, muscles, nerves, teeth and skin.</p>
       </div>
     </div>
     
