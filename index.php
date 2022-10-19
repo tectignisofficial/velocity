@@ -11,8 +11,8 @@
   <meta content="Velocity Exim Goods" name="Velocity Exim Goods">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.webp" rel="icon">
-  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+  <link href="assets/img/favicon1.png" rel="icon">
+  <link href="assets/img/apple-touch-icon1.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
