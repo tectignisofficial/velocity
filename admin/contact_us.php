@@ -1,4 +1,10 @@
 <?php
+
+session_start();
+if(!isset($_SESSION['id']))
+{                                                                                       
+  header("location:adminlogin.php");
+}
 include("include/config.php");
 if(isset($_GET['gen'])){
   $id=mysqli_real_escape_string($conn,$_GET['gen']);

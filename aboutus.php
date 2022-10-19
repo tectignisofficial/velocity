@@ -54,7 +54,7 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/aboutus.webp) ; border-radius:5%; height:20%" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/download.jfif) ; border-radius:5%; height:20%" data-aos="fade-up" data-aos-delay="150">
             
           </div>
           <div class="col-lg-6 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
@@ -95,7 +95,7 @@ The team in Kinal are high class professionals with immense passion and deep und
   <?php include "include/footer.php"; ?>
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
 
   <!-- Vendor JS Files -->
   

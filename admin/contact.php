@@ -1,5 +1,12 @@
 <?php
 include("include/config.php");
+
+session_start();
+if(!isset($_SESSION['id']))
+{                                                                                       
+  header("location:adminlogin.php");
+}
+
 if(isset($_GET['gen'])){
   $id=mysqli_real_escape_string($conn,$_GET['gen']);
   $sql=mysqli_query($conn,"update leads set `is_sales`='1' where id='$id'");

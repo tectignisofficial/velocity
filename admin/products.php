@@ -1,6 +1,12 @@
 <?php  
 include("include/config.php");
 
+session_start();
+if(!isset($_SESSION['id']))
+{                                                                                       
+  header("location:adminlogin.php");
+}
+
 if(isset($_POST['submit'])){
 $product_name=$_POST['product_name'];
 $title=$_POST['title'];
