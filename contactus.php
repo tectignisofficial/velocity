@@ -96,12 +96,12 @@ input[type=number] {
 
         <div class="row gy-4">
 
-          <div class="col-md-6">
+          <div class="col-md-6 contact">
             <div class="info-item  d-flex align-items-center">
               <i class="icon bi bi-map flex-shrink-0"></i>
               <div>
                 <h3>Our Address</h3>
-                <p>Kamothe, Panvel - 410206</p>
+                <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank">205 Prabhu Shrine Plot 85 Sector 22 Kamothe,Raigad,Maharashtra,India 410209</a>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -111,7 +111,8 @@ input[type=number] {
               <i class="icon bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@velocityeximgoods.com</p>
+                <a href="mailto:sales@veg.com"> <p>sales@veg.com</p></a>
+                <a href="mailto:ceo@veg.com"> <p>ceo@veg.com</p></a>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -121,7 +122,7 @@ input[type=number] {
               <i class="icon bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+919970026458</p>
+                <a href="tel:+919970026458"><p>+919970026458</p></a>
               </div>
             </div>
           </div><!-- End Info Item -->

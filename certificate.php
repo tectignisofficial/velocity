@@ -78,12 +78,12 @@
         <div class="row gy-4">
           <div class="col-lg-9 d-flex offset-lg-3 align-items-center">
             <div class="row gy-4">
-
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-file-pdf"></i>
+                  <h4>Fssai Licence</h4>
                   <div class="text-center">
-                  <a href="#" class="btn btn-danger">Download</a>
+                  <a href="assets/img/PDF/fssai_licenses.pdf" target="_blank" class="btn btn-danger">Download</a>
                 </div>
                 </div>
               </div>
@@ -91,8 +91,9 @@
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-file-pdf"></i>
+                  <h4>Apeda RCMC</h4>
                   <div class="text-center">
-                  <a href="#" class="btn btn-danger">Download</a>
+                  <a href="assets/img/PDF/Apeda RCMC.pdf" target="_blank" class="btn btn-danger">Download</a>
                 </div>
                 </div>
               </div>
@@ -100,43 +101,9 @@
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-file-pdf"></i>
+                  <h4>Import export code</h4>
                   <div class="text-center">
-                  <a href="#" class="btn btn-danger">Download</a>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row gy-4 mt-2">
-          <div class="col-lg-9 d-flex offset-lg-3 align-items-center">
-            <div class="row gy-4">
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-file-pdf"></i>
-                  <div class="text-center">
-                  <a href="#" class="btn btn-danger">Download</a>
-                </div>
-                </div>
-              </div>
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-file-pdf"></i>
-                  <div class="text-center">
-                  <a href="#" class="btn btn-danger">Download</a>
-                </div>
-                </div>
-              </div>
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-file-pdf"></i>
-                  <div class="text-center">
-                  <a href="#" class="btn btn-danger">Download</a>
+                  <a href="assets/img/PDF/Import export code.pdf"  target="_blank" class="btn btn-danger">Download</a>
                 </div>
                 </div>
               </div>
@@ -144,6 +111,8 @@
           </div>
 
         </div>
+
+       
       </div>
     </section>
     <!-- End Why Us Section -->

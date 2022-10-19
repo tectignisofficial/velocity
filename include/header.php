@@ -18,15 +18,14 @@ $page=substr($_SERVER['SCRIPT_NAME'],strrpos($_SERVER['SCRIPT_NAME'],"/")+1);
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link <?= $page == 'index.php' ? 'active':'' ?>" href="index.php">Home</a></li>
-          <li><a class="nav-link <?= $page == 'products.php' ? 'active':'' ?>" href="products.php">Products</a></li>
+          <li><a class="nav-link <?= $page == 'products.php'|| $page == 'product_details.php' ? 'active':'' ?>" href="products.php">Products</a></li>
           <li><a class="nav-link <?= $page == 'gallery.php' ? 'active':'' ?>" href="gallery.php">Gallery</a></li>
           <li><a class="nav-link <?= $page == 'certificate.php' ? 'active':'' ?>" href="certificate.php">Certificate</a></li>
           <li><a class="nav-link <?= $page == 'aboutus.php' ? 'active':'' ?>" href="aboutus.php">About</a></li>
           <li><a class="nav-link <?= $page == 'contactus.php' ? 'active':'' ?>" href="contactus.php">Contact Us</a></li>
         </ul>
       </nav><!-- .navbar -->
-
-      <a class="btn-book-a-table" href="tel:+919970026458">+919970026458</a>
+      <a class="btn-book-a-table" href="tel:+919970026458">+91 9970026458</a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
