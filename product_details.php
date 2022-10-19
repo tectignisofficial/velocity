@@ -81,23 +81,13 @@ $id=$_GET['id'];
                     style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
               </div> -->
               <div class="col-lg-6 col-md-6 col-12">
-                <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class=" swiper" data-aos="fade-up" data-aos-delay="100">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
+                      <a class="glightbox" href="admin/dist/img/images/<?php echo $arr['file'] ?>"><img
                           src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
                           style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
                     </div>
-                    <div class="swiper-slide">
-                      <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
-                          src="admin/dist/img/images/<?php echo $arr['file1'] ?> " class="menu-img img-fluid"
-                          style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
-                    </div><!-- End testimonial item -->
-                    <div class="swiper-slide">
-                      <a class="glightbox" href="product_details.php?id=<?php echo $arr['id'] ?>"><img
-                          src="admin/dist/img/images/<?php echo $arr['file2'] ?> " class="menu-img img-fluid"
-                          style="height:350px; width:700px ; border-radius: 5%;" alt="product"></a>
-                    </div><!-- End testimonial item -->
                   </div>
                   <div class="swiper-pagination"></div>
                 </div>

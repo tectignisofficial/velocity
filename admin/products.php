@@ -238,31 +238,7 @@ if(isset($_GET['eid'])){
                           </div>
                         </div>
 
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label"><b>Upload Image 1</b></label>
-                          <div class="col-sm-9">
-                            <?php
-                            if(isset($_GET['eid'])){
-                              ?>
-                            <img src="dist/img/images/<?php echo $file; ?>" width="200" height="200">
-                            <input type="hidden" value="<?php echo $file; ?>" name="img1">
-                            <?php }  ?>
-                            <input type="file" class="form-control" name="file1">
-                          </div>
-                        </div>
-
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label"><b>Upload Image 2</b></label>
-                          <div class="col-sm-9">
-                            <?php
-                            if(isset($_GET['eid'])){
-                              ?>
-                            <img src="dist/img/images/<?php echo $file; ?>" width="200" height="200">
-                            <input type="hidden" value="<?php echo $file; ?>" name="img">
-                            <?php }  ?>
-                            <input type="file" class="form-control" name="file2">
-                          </div>
-                        </div>
+                       
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Description</b></label>
                           <div class="col-sm-9">
