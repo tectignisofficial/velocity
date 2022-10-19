@@ -4,7 +4,7 @@
 
 <div class="container">
   <div class="row gy-3">
-    <div class="col-lg-4 col-md-6 d-flex">
+    <div class="col-lg-5 col-md-6 d-flex">
       <!-- <i class="bi bi-geo-alt icon"></i> -->
       <div>
         <h3>Velocity Exim Goods.</h3>
@@ -12,7 +12,7 @@
       </div>
     </div>
     
-    <div class="col-lg-2 col-md-6 footer-links d-flex">
+    <div class="col-lg-3 col-md-6 footer-links d-flex">
       <div>
         <h4>Services</h4>
         <ul>
@@ -38,32 +38,32 @@
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-6 footer-links d-flex">
-      <!-- <i class="bi bi-telephone icon"></i> -->
+    <!-- <div class="col-lg-3 col-md-6 footer-links d-flex">
+       <i class="bi bi-telephone icon"></i>
       <div>
         <h4>Products</h4>
         <ul>
           <li>
-           <a href="product_details.php?id=1">Jaggery</a>
+           <a href="product_details.php">Jaggery</a>
           </li>
           <li>
-          <a href="product_details.php?id=2"> Raisin</a>
+          <a href="product_details.php"> Raisin</a>
           </li>
           <li>
-          <a href="product_details.php?id=3"> Turmeric</a>
+          <a href="product_details.php"> Turmeric</a>
           </li>
           <li>
-          <a href="product_details.php?id=4">Cashew</a>
+          <a href="product_details.php">Cashew</a>
           </li>
           <li>
-          <a href="product_details.php?id=5">Vegetable powder</a>
+          <a href="product_details.php">Vegetable powder</a>
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
 
-    <div class="col-lg-3 col-md-6 footer-links">
+    <div class="col-lg-4 col-md-6 footer-links">
       <h4>Get In Touch</h4>
     <ul>
       <li>

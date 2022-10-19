@@ -97,7 +97,7 @@ echo "not done";
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Forget Password-Shree Aai Foods</title>
       <!-- Favicons -->
-   <link href="../assets/img/logo/footer_logo.png" rel="icon">
+   <link href="admin/dist/img/favicon.png" rel="icon">
         <!-- Font Awesome -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"

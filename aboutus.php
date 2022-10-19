@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +54,7 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/download.jfif) ; border-radius:5%; height:20%" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/a3.webp) ; height:20%;background-repeat:no-repeat; margin-top:50  px" data-aos="fade-up" data-aos-delay="150">
             
           </div>
           <div class="col-lg-6 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">

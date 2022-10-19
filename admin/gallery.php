@@ -70,7 +70,7 @@ if(isset($_GET['id'])){
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin - Products</title>
   <!-- Favicons -->
-  <link href="../assets/img/logo/footer_logo.png" rel="icon">
+  <link href="dist/img/favicon.png" rel="icon">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"

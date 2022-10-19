@@ -11,8 +11,8 @@
   <meta content="Velocity Exim Goods" name="Velocity Exim Goods">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon1.png" rel="icon">
-  <link href="assets/img/apple-touch-icon1.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +48,33 @@
   <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
       <div class="row justify-content-between gy-5">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+        <div class="col-lg-12">
+        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <!-- <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div> -->
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 text-center text-lg-start">
+
+          <img src="assets/img/menu/m5.webp" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                <div class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
           <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
           <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <!-- <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -57,8 +83,18 @@
           </div> -->
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+
+          <img src="assets/img/menu/m2.png" style="background-color:transparent;" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        </div>
+    
       </div>
     </div>
   </section><!-- End Hero Section -->
@@ -75,7 +111,7 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/download.jfif) ;border-radius:5%; height:20%" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/a3.webp) ; margin-top:50px; height:20%; background-repeat:no-repeat" data-aos="fade-up" data-aos-delay="150">
            
           </div>
           <div class="col-lg-6 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
@@ -97,60 +133,6 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Why Us Section ======= -->
-    <!-- <section id="why-us" class="why-us section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="why-box">
-              <h3>Why Choose Yummy?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8 d-flex align-items-center">
-            <div class="row gy-4">
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-              </div>
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-              </div>
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Why Us Section -->
 
     <!-- ======= Stats Counter Section ======= -->
     <section id="stats-counter" class="stats-counter">
@@ -819,7 +801,8 @@
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
+    </section>
+    <!-- End Gallery Section -->
 
  
 

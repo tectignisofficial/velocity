@@ -263,6 +263,8 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+
 .header {
   background: #fff;
   transition: all 0.5s;
@@ -481,6 +483,12 @@ section {
   font-family: var(--font-secondary);
 }
 }
+@media screen and (max-width: 1279px) {
+  .header .btn-book-a-table,
+  .header .btn-book-a-table:focus {
+ display:none;
+  }
+  }
 @media (max-width: 1279px) {
   .navbar {
     position: fixed;
@@ -1545,12 +1553,18 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+
+
+
 .hero {
   width: 100%;
   background-size: cover;
   position: relative;
   min-height: 60vh;
-  padding: 160px 0 60px 0;
+  /* padding: 160px 0 60px 0; */
+  padding: 99px 0 18px 0;
+
 }
 
 .hero h2 {
