@@ -489,6 +489,11 @@ section {
  display:none;
   }
   }
+  @media screen and (max-width: 1279px) {
+   ul {
+ padding-left:0px;
+    }
+    }
 @media (max-width: 1279px) {
   .navbar {
     position: fixed;
