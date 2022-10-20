@@ -28,13 +28,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Yummy - v1.2.1
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -792,7 +785,7 @@
           
           <div class="swiper-wrapper align-items-center">
           <?php
-              $sql=mysqli_query($conn,"select * from gallery");   
+              $sql=mysqli_query($conn,"select * from gallery limit 18");   
               while($arr=mysqli_fetch_array($sql)){
               ?>
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="admin/dist/img/images/<?php echo $arr['file'] ?>"><img src="admin/dist/img/images/<?php echo $arr['file'] ?>"  style="height:300px; width:415px ; border-radius: 5%;" class="img-fluid" alt=""></a></div>
