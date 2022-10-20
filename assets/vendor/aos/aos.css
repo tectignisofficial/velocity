@@ -200,11 +200,11 @@ body[data-aos-delay="850"] [data-aos] {
 }
 [data-aos][data-aos][data-aos-delay="850"].aos-animate,
 body[data-aos-delay="850"] [data-aos].aos-animate {
-  transition-delay: 0.85s;
+  transition-delay: 0.2s;
 }
 [data-aos][data-aos][data-aos-duration="900"],
 body[data-aos-duration="900"] [data-aos] {
-  transition-duration: 0.9s;
+  transition-duration: 0.2s;
 }
 [data-aos][data-aos][data-aos-delay="900"],
 body[data-aos-delay="900"] [data-aos] {

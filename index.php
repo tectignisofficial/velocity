@@ -774,7 +774,7 @@
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery  mb-5">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="">
 
         <div class="section-header">
           <h2>gallery</h2>

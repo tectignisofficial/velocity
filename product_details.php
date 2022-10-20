@@ -18,6 +18,7 @@ $cat=$_GET['cat'];
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,7 +153,7 @@ a:hover {
       
       <div class="row">
       <?php
-            $sql=mysqli_query($conn,"select * from products where categories='$cat' limit 1");   
+            $sql=mysqli_query($conn,"select * from products where categories='$cat' limit 2");   
             while($arr=mysqli_fetch_array($sql)){
             ?>
         <div class="col-lg-4 col-md-6">
