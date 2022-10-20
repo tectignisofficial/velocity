@@ -79,7 +79,7 @@
                     src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
                     style="height:300px; width:415px ; border-radius: 5%;" alt="product"></a>
                 <h5 class="product-title"> <a
-                    href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['product_name'];?></a>
+                    href="product_details.php?cat=<?php echo $arr['categories'] ?>&id=<?php echo $arr['id'] ?>"><?php echo $arr['product_name'];?></a>
                 </h5>
 
               </div><!-- Menu Item -->

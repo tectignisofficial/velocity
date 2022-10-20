@@ -1,5 +1,7 @@
 <?php include("include/config.php");
 $id=$_GET['id'];
+$cat=$_GET['cat'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -144,6 +146,31 @@ a:hover {
       </div>
     </section><!-- End Menu Section -->
 
+    <section class="section section-pading pt-0 related">
+    <div class="container">
+      <h3>Related Products </h3>
+      
+      <div class="row">
+      <?php
+            $sql=mysqli_query($conn,"select * from products where categories='$cat' limit 1");   
+            while($arr=mysqli_fetch_array($sql)){
+            ?>
+        <div class="col-lg-4 col-md-6">
+          <div class="ct-product">
+            <div class="ct-product-thumbnail">
+            <img src="admin/dist/img/images/<?php echo $arr['file'] ?>"  class="menu-img img-fluid"
+                          style="height:350px; width:700px ; border-radius: 5%;" alt="detail">
+              <!-- <a href="#"><img src="assets/img/products/2.webp" alt="product"></a> -->
+            </div>
+            <div class="ct-product-body">
+              <h5 class="product-title"> <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['product_name'];?></a> </h5>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
+      </div>
+    </div>
+  </section>
   </main><!-- End #main -->
 
   <?php include "include/footer.php"; ?>

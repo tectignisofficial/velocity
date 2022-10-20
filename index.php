@@ -65,7 +65,7 @@
         </div>
         <div class="col-lg-6 order-1 order-lg-2 text-center text-lg-start">
 
-          <img src="assets/img/menu/m5.webp" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/menu/m4.webp" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
                 </div>
               </div>
@@ -84,7 +84,7 @@
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
 
-          <img src="assets/img/menu/m2.png" style="background-color:transparent;" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/menu/m3.webp" style="background-color:transparent;" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/a3.webp) ; margin-top:50px; height:20%; background-repeat:no-repeat" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6 position-relative about-img" style="background-image: url(assets/img/a1.webp) ; margin-top:50px; height:20%; background-repeat:no-repeat" data-aos="fade-up" data-aos-delay="150">
            
           </div>
           <div class="col-lg-6 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
@@ -503,19 +503,19 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        I love this jaggery powder for the pure natural sugarcane flavor. I have tried several brands but haven't been able to find one that caters to my taste preferences. But this has surely been one of the best in taste and flavor.
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
+                      <h3>Vedant Naidu</h3>
+                      <!-- <h4>Ceo &amp; Founder</h4> -->
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-2 text-center">
+                  <!-- <div class="col-lg-2 text-center">
                     <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -527,19 +527,21 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                        I highly appreciate organic India for their Pure quality. I regularly buy Turmeric Powder from here.
+                        <br>
+                         I had recently done a self assessment on its quality. 
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
+                      <h3>Mashesh Niwate</h3>
+                      <!-- <h4>Designer</h4> -->
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-2 text-center">
+                  <!-- <div class="col-lg-2 text-center">
                     <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -547,23 +549,23 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
+                  <div class="col-lg-8">
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                        I love this jaggery powder for the pure natural sugarcane flavor. I have tried several brands but haven't been able to find one that caters to my taste preferences. But this has surely been one of the best in taste and flavor.
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
+                      <h3>Rahul Gaikwad</h3>
+                      <!-- <h4>Store Owner</h4> -->
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-2 text-center">
+                  <!-- <div class="col-lg-2 text-center">
                     <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -571,23 +573,23 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
+                  <div class="col-lg-8">
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                        I highly appreciate organic India for their Pure quality. I regularly buy Turmeric Powder from here. I had recently done a self assessment on its quality. 
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
+                      <h3>Keshav Mane</h3>
+                      <!-- <h4>Entrepreneur</h4> -->
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-2 text-center">
+                  <!-- <div class="col-lg-2 text-center">
                     <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div><!-- End testimonial item -->

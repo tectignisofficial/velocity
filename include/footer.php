@@ -8,7 +8,7 @@
       <!-- <i class="bi bi-geo-alt icon"></i> -->
       <div>
         <h3>Velocity Exim Goods.</h3>
-        <p> Dry Fruits are also rich source of Calcium, Copper, Iron, Magnesium, Potassium, Phosphorus, Protein, Riboflavin, Vitamin A-C-E-K-B6 and Zinc. This means healthy bones, muscles, nerves, teeth and skin.</p>
+        <p>Jaggery improved immune system, it detoxify body, improves digestive system. Raisin, Cashews, Turmeric & vegetable powders are rich source of major minerals & vitamins. This means the overall goof health.</p>
       </div>
     </div>
     
@@ -68,7 +68,7 @@
     <ul>
       <li>
         <i class="bi bi-geo-alt icon"></i>
-        <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank"> <p>205 Prabhu Shrine Plot 85 Sector 22 Kamothe,Raigad,Maharashtra,India 410209</p></a>
+        <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank"> <p>205 Prabhu Shrine Plot 85 Sector 22 <br>Kamothe 410209</p></a>
         </li>
         <li>
           <i class="bi bi-telephone icon"></i>

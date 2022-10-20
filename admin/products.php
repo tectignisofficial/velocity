@@ -218,8 +218,15 @@ if(isset($_GET['eid'])){
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Categories</b></label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" name="categories" placeholder="categories"
-                              value="<?php echo $categories; ?> " required>
+                          <select class="form-control select2" data-placeholder="Categories" style="width: 100%;" name="categories">
+                                    <option selected="selected" data-placeholder="Categories">Select Categories</option>
+                                    <?php $sql=mysqli_query ($conn,"select * from add_categories");
+                                    while($arr=mysqli_fetch_array($sql)){
+                                    ?>
+                                    <option><?php echo $arr['categories'];?></option>
+                                    <?php }?>
+                                    <option selected="selected"><?php echo $categories; ?></option>
+                                    </select>
                           </div>
                         </div>
 

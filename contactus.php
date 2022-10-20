@@ -96,16 +96,7 @@ input[type=number] {
 
         <div class="row gy-4">
 
-          <div class="col-md-6 contact">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-map flex-shrink-0"></i>
-              <div>
-                <h3>Our Address</h3>
-                <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank">205 Prabhu Shrine Plot 85 Sector 22 Kamothe,Raigad,Maharashtra,India 410209</a>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
+          
           <div class="col-md-6">
             <div class="info-item d-flex align-items-center">
               <i class="icon bi bi-envelope flex-shrink-0"></i>
@@ -116,7 +107,7 @@ input[type=number] {
               </div>
             </div>
           </div><!-- End Info Item -->
-
+          
           <div class="col-md-6">
             <div class="info-item  d-flex align-items-center">
               <i class="icon bi bi-telephone flex-shrink-0"></i>
@@ -126,19 +117,16 @@ input[type=number] {
               </div>
             </div>
           </div><!-- End Info Item -->
-
-          <div class="col-md-6">
+          
+          <div class="col-md-6 offset-md-3 contact">
             <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-share flex-shrink-0"></i>
+              <i class="icon bi bi-map flex-shrink-0"></i>
               <div>
-                <h3>Opening Hours</h3>
-                <div><strong>Mon-Sat:</strong> 10:00 AM  - 08:00 PM;
-                  <strong>Sunday:</strong> Closed
-                </div>
+                <h3>Our Address</h3>
+                <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank">205 Prabhu Shrine Plot 85 Sector 22 Kamothe,Raigad,Maharashtra,India 410209</a>
               </div>
             </div>
           </div><!-- End Info Item -->
-
         </div>
 
         <form  method="POST" class="php-email-form p-3 p-md-4">
