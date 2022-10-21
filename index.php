@@ -98,75 +98,48 @@
     <div class="section section-padding ct-categories ct-categories-1">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-4 col-md-5 col-sm-6">
             <a href="#" class="ct-category">
               <div class="ct-category-icon">
                 <i class="flaticon-spices"></i>
-                <h5>Agro</h5>
+                <h5>Jaggery</h5>
                 <span>17 Spicess</span>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <a href="#" class="ct-category">
+              <div class="ct-category-icon">
+                <i class="flaticon-spices"></i>
+                <h5>Raisin</h5>
+                <span>17 Spicess</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-6">
             <a href="#" class="ct-category">
               <div class="ct-category-icon">
                 <i class="flaticon-ginger"></i>
-                <h5>Turmeric</h5>
+                <h5>Turmeric Powder</h5>
                 <span>87 Spicess</span>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-4 col-md-5 col-sm-6 offset-lg-2">
             <a href="#" class="ct-category">
               <div class="ct-category-icon">
                 <i class="flaticon-spices-1"></i>
-                <h5>Seasonal Agro</h5>
+                <h5>Cashew</h5>
                 <span>36 Spicess</span>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-4 col-md-5 col-sm-6">
             <a href="#" class="ct-category">
               <div class="ct-category-icon">
-                <i class="flaticon-spices-2"></i>
-                <h5>Arya</h5>
+                <i class="flaticon-spices"></i>
+                <h5>Vegetable Powder</h5>
                 <span>42 Spicess</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <a href="#" class="ct-category">
-              <div class="ct-category-icon">
-                <i class="flaticon-spices-3"></i>
-                <h5>Masalas Garam</h5>
-                <span>55 Spicess</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <a href="#" class="ct-category">
-              <div class="ct-category-icon">
-                <i class="flaticon-anise"></i>
-                <h5>Generic</h5>
-                <span>45 Spicess</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <a href="#" class="ct-category">
-              <div class="ct-category-icon">
-                <i class="flaticon-herb"></i>
-                <h5>Spicy & Herbs</h5>
-                <span>13 Spicess</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <a href="#" class="ct-category">
-              <div class="ct-category-icon">
-                <i class="flaticon-condiment"></i>
-                <h5>Generic</h5>
-                <span>21 Spicess</span>
               </div>
             </a>
           </div>
@@ -265,7 +238,7 @@
                 </span>
                 <div class="contact-info ml-4">
                   <span>gmail@gmail.com</span>
-                  <h4>(2)789 675 098</h4>
+                  <h4>+91 9970026458</h4>
                 </div>
               </div>
             </div>
@@ -410,173 +383,7 @@
     </section>
     <!-- Video Style 1 End -->
 
-    <!-- Blog Posts Start -->
-    <section class="section section-padding posts">
-      <div class="container">
-        <div class="section-title-wrap section-header">
-          <h2 class="title">From My Blog</h2>
-          <p class="subtitle">Usual three flavour masalas</p>
-        </div>
-        <div class="row masonry">
-          <!-- Post Start -->
-          <div class="col-lg-6 col-md-6 masonry-item">
-            <article class="post">
-              <div class="post-thumbnail">
-                <a href="blog-single-v1.html"
-                  ><img src="assets/img/blog/1.jpg" alt="blog post"
-                /></a>
-                <div class="post-meta">
-                  <span>September 22, 2021</span>
-                  <span>Posted by Jonathan Pick</span>
-                </div>
-              </div>
-              <div class="post-categories">
-                <a href="#">Agro</a>
-              </div>
-              <div class="post-body">
-                <h5 class="post-title">
-                  <a href="blog-single-v1.html">Glass container for masalas</a>
-                </h5>
-                <p class="post-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content...
-                </p>
-              </div>
-            </article>
-          </div>
-          <!-- Post End -->
 
-          <!-- Post Start -->
-          <div class="col-lg-6 col-md-6 masonry-item">
-            <article class="post">
-              <div class="post-thumbnail">
-                <a href="blog-single-v1.html"
-                  ><img src="assets/img/blog/2.jpg" alt="blog post"
-                /></a>
-                <div class="post-meta">
-                  <span>September 24, 2021</span>
-                  <span>Posted by Jonathan Pick</span>
-                </div>
-              </div>
-              <div class="post-categories">
-                <a href="#">Agro</a>
-              </div>
-              <div class="post-body">
-                <h5 class="post-title">
-                  <a href="blog-single-v1.html">Various Spices powder</a>
-                </h5>
-                <p class="post-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content...
-                </p>
-              </div>
-            </article>
-          </div>
-          <!-- Post End -->
-
-          <!-- Post Start -->
-          <div class="col-lg-6 col-md-6 masonry-item">
-            <article class="post post-format-video">
-              <div class="post-thumbnail">
-                <a href="blog-single-v1.html"
-                  ><img src="assets/img/blog/3.jpg" alt="blog post"
-                /></a>
-                <div class="post-meta">
-                  <span>September 22, 2021</span>
-                  <span>Posted by Jonathan Pick</span>
-                </div>
-                <div class="video-player-trigger">
-                  <a
-                    href="https://www.youtube.com/watch?v=ySITvuQ1K74"
-                    class="popup-youtube"
-                  >
-                    <i class="fas fa-play"></i>
-                    <div class="video-player-icons">
-                      <i class="flaticon-spices"></i>
-                      <i class="flaticon-ginger"></i>
-                      <i class="flaticon-spices-2"></i>
-                      <i class="flaticon-anise"></i>
-                      <i class="flaticon-herb"></i>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="post-categories">
-                <a href="#">How-To</a>
-                <a href="#">Agro</a>
-              </div>
-              <div class="post-body">
-                <h5 class="post-title">
-                  <a href="blog-single-v1.html">Fresh Organic Mustard Leaves</a>
-                </h5>
-                <p class="post-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content...
-                </p>
-              </div>
-            </article>
-          </div>
-          <!-- Post End -->
-
-          <!-- Post Start -->
-          <div class="col-lg-6 col-md-6 masonry-item">
-            <article class="post">
-              <div class="post-thumbnail">
-                <a href="blog-single-v1.html"
-                  ><img src="assets/img/blog/4.jpg" alt="blog post"
-                /></a>
-                <div class="post-meta">
-                  <span>April 26, 2021</span>
-                  <span>Posted by Jonathan Pick</span>
-                </div>
-              </div>
-              <div class="post-categories">
-                <a href="#">Lunch</a>
-              </div>
-              <div class="post-body">
-                <h5 class="post-title">
-                  <a href="blog-single-v1.html">Organic Green Bell Pepper</a>
-                </h5>
-                <p class="post-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content...
-                </p>
-              </div>
-            </article>
-          </div>
-          <!-- Post End -->
-
-          <!-- Post Start -->
-          <div class="col-lg-6 col-md-6 masonry-item">
-            <article class="post">
-              <div class="post-thumbnail">
-                <a href="blog-single-v1.html"
-                  ><img src="assets/img/blog/5.jpg" alt="blog post"
-                /></a>
-                <div class="post-meta">
-                  <span>April 26, 2021</span>
-                  <span>Posted by Jonathan Pick</span>
-                </div>
-              </div>
-              <div class="post-categories">
-                <a href="#">Seasonal Agro</a>
-              </div>
-              <div class="post-body">
-                <h5 class="post-title">
-                  <a href="blog-single-v1.html">Usual three flavour masalas</a>
-                </h5>
-                <p class="post-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content...
-                </p>
-              </div>
-            </article>
-          </div>
-          <!-- Post End -->
-        </div>
-      </div>
-    </section>
-    <!-- Blog Posts End -->
 
     <!-- Testimonials Start -->
     <section
@@ -593,23 +400,23 @@
             <div class="ct-testimonial-item">
               <div class="ct-testimonial-item-inner">
                 <i class="flaticon-left-quote"></i>
-                <span>Johny White</span>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
+                <span>Vedant Naidu</span>
+                <p>I love this jaggery powder for the pure natural sugarcane flavor. I have tried several brands but haven't been able to find one that caters to my taste preferences. But this has surely been one of the best in taste and flavor.  
                 </p>
               </div>
             </div>
             <div class="ct-testimonial-item">
               <div class="ct-testimonial-item-inner">
                 <i class="flaticon-left-quote"></i>
-                <span>Brian Masalaz</span>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
+                <span>Rahul Gaikwad</span>
+                <p>I highly appreciate organic India for their Pure quality. I regularly buy Turmeric Powder from here. I had recently done a self assessment on its quality.</p>
+              </div>
+            </div>
+            <div class="ct-testimonial-item">
+              <div class="ct-testimonial-item-inner">
+                <i class="flaticon-left-quote"></i>
+                <span>Mahesh Niwate</span>
+                <p>I highly appreciate organic India for their Pure quality. I regularly buy Turmeric Powder from here.</p>
               </div>
             </div>
           </div>
@@ -629,11 +436,11 @@
           <div class="col-lg-6">
             <div class="cta-item item-1">
               <div class="cta-item-inner">
-                <span class="custom-secondary">Generic</span>
+                <span class="custom-secondary">Jaggery</span>
                 <h3>Spices From Around World!</h3>
                 <p>Entice yourself with delicious spices in your meal!</p>
                 <a href="recipe-archive.html" class="btn-custom secondary">
-                  View Spicess <i class="fas fa-arrow-right"></i>
+                  View More <i class="fas fa-arrow-right"></i>
                 </a>
               </div>
               <img src="assets/img/categories/png-1.png" alt="cta" />
@@ -642,11 +449,11 @@
           <div class="col-lg-6">
             <div class="cta-item item-2">
               <div class="cta-item-inner">
-                <span class="custom-primary">Arya</span>
+                <span class="custom-primary">Turmeric</span>
                 <h3>Find The Taste Of India!</h3>
                 <p>We supply all organic spice from farm ...</p>
                 <a href="recipe-archive.html" class="btn-custom primary">
-                  View Spicess <i class="fas fa-arrow-right"></i>
+                  View More<i class="fas fa-arrow-right"></i>
                 </a>
               </div>
               <img src="assets/img/categories/png-2.png" alt="cta" />
@@ -657,212 +464,39 @@
     </section>
     <!-- CTA End -->
 
-    <!-- Products Start -->
-    <section class="section section-padding pt-0">
-      <div class="container">
-        <div class="section-title-wrap section-header">
-          <h2 class="title">Spicy World</h2>
-          <p class="subtitle">We take care of your health...</p>
-        </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="ct-product">
-              <div class="ct-product-thumbnail">
-                <a href="product-details.html"
-                  ><img src="assets/img/products/2.png" alt="product"
-                /></a>
-                <div class="ct-product-controls">
-                  <a href="product-details.html" class="btn-custom secondary"
-                    >Buy Now <i class="fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="ct-product-body">
-                <h5 class="product-title">
-                  <a href="product-details.html">Agro</a>
-                </h5>
-                <p class="product-price custom-secondary">20.00$</p>
-                <p class="product-text">
-                  Agro always a good in tast, grab it ....
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="ct-product">
-              <div class="ct-product-thumbnail">
-                <a href="product-details.html"
-                  ><img src="assets/img/products/3.png" alt="product"
-                /></a>
-                <div class="ct-product-controls">
-                  <a href="product-details.html" class="btn-custom secondary"
-                    >Buy Now <i class="fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="ct-product-body">
-                <h5 class="product-title">
-                  <a href="product-details.html">Sesame Seeds</a>
-                </h5>
-                <p class="product-price custom-secondary">8.00$</p>
-                <p class="product-text">
-                  Sesame Seeds is for you , from farm ...
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="ct-product">
-              <div class="ct-product-thumbnail">
-                <a href="product-details.html"
-                  ><img src="assets/img/products/1.png" alt="product"
-                /></a>
-                <div class="ct-product-controls">
-                  <a href="product-details.html" class="btn-custom secondary"
-                    >Select Options <i class="fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="ct-product-body">
-                <h5 class="product-title">
-                  <a href="product-details.html">Clove</a>
-                </h5>
-                <p class="product-price custom-secondary">32.00$ - 48.00$</p>
-                <p class="product-text">
-                  Taste of spice , bring excitment to you...
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Products End -->
-
-    <!-- Newsletter start -->
-    <section
-      class="section light-bg bg-cover"
-      style="background-image: url('assets/img/bg/1.jpg')"
-    >
-      <div class="container">
-        <div class="section-title-wrap section-header text-center">
-          <h2 class="title">Subscribe to My Newsletter</h2>
-          <p class="subtitle">
-            Get access to my latest recipes by joining the weekly newsletter
-          </p>
-        </div>
-
-        <form class="ct-newsletter" method="post">
-          <input
-            type="email"
-            class="form-control"
-            placeholder="Enter your email address"
-            value=""
-          />
-          <button type="submit" class="btn-custom primary" name="button">
-            Submit <i class="far fa-paper-plane"></i>
-          </button>
-        </form>
-      </div>
-    </section>
-    <!-- Newsletter End -->
 
     <!-- Instagram Start -->
     <div class="insta style-6 section">
       <div class="container">
         <div class="section-title-wrap section-header text-center">
-          <span><i class="fab fa-instagram"></i></span>
-          <h2 class="title">Follow Us</h2>
+          <h2 class="title">Gallery</h2>
         </div>
         <div class="insta-slider">
           <div class="insta-item">
             <div class="insta-item-inner">
-              <ul class="comment-list">
-                <li>
-                  <i class="fas fa-heart"></i>
-                  18
-                </li>
-                <li>
-                  <i class="fas fa-comment"></i>
-                  12
-                </li>
-              </ul>
               <img src="assets/img/ig/slider/1.jpg" alt="insta" />
             </div>
           </div>
           <div class="insta-item">
             <div class="insta-item-inner">
-              <ul class="comment-list">
-                <li>
-                  <i class="fas fa-heart"></i>
-                  15
-                </li>
-                <li>
-                  <i class="fas fa-comment"></i>
-                  19
-                </li>
-              </ul>
+          
               <img src="assets/img/ig/slider/2.jpg" alt="insta" />
             </div>
           </div>
           <div class="insta-item">
             <div class="insta-item-inner">
-              <ul class="comment-list">
-                <li>
-                  <i class="fas fa-heart"></i>
-                  15
-                </li>
-              </ul>
+       
               <img src="assets/img/ig/slider/3.jpg" alt="insta" />
             </div>
           </div>
           <div class="insta-item">
             <div class="insta-item-inner">
-              <ul class="comment-list">
-                <li>
-                  <i class="fas fa-heart"></i>
-                  22
-                </li>
-                <li>
-                  <i class="fas fa-comment"></i>
-                  12
-                </li>
-              </ul>
+          
               <img src="assets/img/ig/slider/4.jpg" alt="insta" />
             </div>
           </div>
-          <div class="insta-item">
-            <div class="insta-item-inner">
-              <ul class="comment-list">
-                <li>
-                  <i class="fas fa-heart"></i>
-                  30
-                </li>
-                <li>
-                  <i class="fas fa-comment"></i>
-                  15
-                </li>
-              </ul>
-              <img src="assets/img/ig/slider/5.jpg" alt="insta" />
-            </div>
-          </div>
-          <div class="insta-item">
-            <div class="insta-item-inner">
-              <ul class="comment-list">
-                <li>
-                  <i class="fas fa-comment"></i>
-                  15
-                </li>
-              </ul>
-              <img src="assets/img/ig/slider/6.jpg" alt="insta" />
-            </div>
-          </div>
-          <div class="insta-item">
-            <div class="insta-item-inner">
-              <img src="assets/img/ig/slider/7.jpg" alt="insta" />
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>

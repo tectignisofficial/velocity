@@ -46,7 +46,7 @@
           </div>
           <ul class="navbar-nav">
             <li class="menu-item ">
-              <a href="#">Home</a>
+              <a href="index.php">Home</a>
             </li>
             <li class="menu-item">
               <a href="products.php">Products</a>
