@@ -37,12 +37,12 @@
           </a>
           <!-- Menu -->
           <div class="header-control-left">
-             <li class="logo-wrapper">
+             <div class="logo-wrapper">
               <!-- Logo -->
               <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.png" alt="logo" />
               </a>
-            </li>
+            </div>
           </div>
           <ul class="navbar-nav">
             <li class="menu-item ">
