@@ -53,9 +53,9 @@
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami pork picanha tongue venison strip steak
               </p>
-              <a href="#" class="btn-custom primary shadow-none"
-                >Visit Spices Bazzar <i class="fas fa-arrow-right"></i>
-              </a>
+               <a href="contactus.php" class="btn-custom primary shadow-none"
+                >Contact us <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
           <div class="banner-item text-center">
@@ -67,8 +67,8 @@
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami pork picanha tongue venison strip steak
               </p>
-              <a href="#" class="btn-custom primary shadow-none"
-                >Contact Me <i class="fas fa-arrow-right"></i
+              <a href="contactus.php" class="btn-custom primary shadow-none"
+                >Contact us <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </div>
@@ -82,8 +82,8 @@
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami pork picanha tongue venison strip steak
               </p>
-              <a href="#" class="btn-custom primary shadow-none"
-                >Visit My Blog <i class="fas fa-arrow-right"></i
+               <a href="contactus.php" class="btn-custom primary shadow-none"
+                >Contact us <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </div>
