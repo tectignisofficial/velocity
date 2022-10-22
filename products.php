@@ -1,3 +1,6 @@
+<?php
+ include 'include\config.php';
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:41:23 GMT -->
@@ -63,22 +66,30 @@
         </div>
 
         <div class="row">
+
+        <?php
+            $sql=mysqli_query($conn,"select * from products");   
+            while($arr=mysqli_fetch_array($sql)){
+            ?>
+
           <div class="col-lg-4 col-md-6">
-            <div class="ct-product">
+            <div class="ct-product">          
               <div class="ct-product-thumbnail">
-                <a href="product-details.html"><img src="assets/img/products/2.png" alt="product"></a>
+              <a class="glightbox" href="admin/dist/img/images/<?php echo $arr['file'] ?>"><img
+                    src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
+                    style="height:300px; width:415px ; border-radius: 5%;" alt="product"></a>
                 <div class="ct-product-controls">
-                  <a href="product-details.html" class="btn-custom secondary">View More<i class="fas fa-arrow-right"></i>
+                  <a href="product-details.php?id=<?php echo $arr['id'] ?>" class="btn-custom secondary">View More<i class="fas fa-arrow-right"></i>
                   </a>
                 </div>
               </div>
               <div class="ct-product-body">
-                <h5 class="product-title text-center">
-                  <a href="product-details.html">Agro</a>
-                </h5>
+              <h5 class="product-title text-center"> <a
+                    href="product-details.php?id=<?php echo $arr['id'] ?>&categories=<?php echo $arr['categories'] ?>"><?php echo $arr['product_name'];?></a>
               </div>
             </div>
           </div>
+          <?php } ?>
         
         </div>
       </div>

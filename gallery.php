@@ -1,4 +1,6 @@
-<?php include 'include\config.php';?>
+<?php
+ include 'include\config.php';
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:41:23 GMT -->
@@ -26,10 +28,7 @@
       	.gslide-description, .description-bottom{
 		display: none !important;
 	}
-  .img-fluid {
-    max-width: 100%;
-    height: 100%;
-}
+
     </style>
   </head>
 
@@ -83,13 +82,16 @@
                              while($arr=mysqli_fetch_array($sql)){
                              ?>
 
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-card py-3">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                                 
 
                                 <a href="admin/dist/img/images/<?php echo $arr['file'];?>" data-gallery="portfolioGallery"
                                     class="portfolio-lightbox preview-link text-center" title="Trusts & Hospitals">
-                                    <img src="admin/dist/img/images/<?php echo $arr['file'];?>" class="img-fluid" alt="">
+                                    <img src="admin/dist/img/images/<?php echo $arr['file'];?>" class="img-fluid" style="height:300px; width:415px; border-radius: 5%; " alt="">
                                 </a>
+                                <h5 class="product-title text-center"> <a
+                    href="gallery.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['title'];?></a>
+                </h5>
                             </div>
 							<?php }  ?>
                         </div>
