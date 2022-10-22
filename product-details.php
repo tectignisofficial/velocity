@@ -312,9 +312,9 @@ $categories=$_GET['categories'];
         <div class="col-lg-4 col-md-6">
           <div class="ct-product">
             <div class="ct-product-thumbnail">
-              <a href="#"><img src="admin/dist/img/images/<?php echo $arr['file'] ?>"  style="height:250px; width:250px; border-radius:2%" alt="product" /></a>
+              <a href="#"><img src="admin/dist/img/images/<?php echo $arr['file'] ?>"  style="height:300px; width:300px; border-radius:2%" alt="product" /></a>
               <div class="ct-product-controls">
-                <a href="#" class="btn-custom secondary">Buy Now <i class="fas fa-arrow-right"></i>
+                <a href="product-details.php?id=<?php echo $arr['id'] ?>&categories=<?php echo $arr['categories'] ?>" class="btn-custom secondary">View More <i class="fas fa-arrow-right"></i>
                 </a>
               </div>
             </div>

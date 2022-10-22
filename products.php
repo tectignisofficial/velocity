@@ -79,7 +79,7 @@
                     src="admin/dist/img/images/<?php echo $arr['file'] ?> " class="menu-img img-fluid"
                     style="height:300px; width:415px ; border-radius: 5%;" alt="product"></a>
                 <div class="ct-product-controls">
-                  <a href="product-details.php?id=<?php echo $arr['id'] ?>" class="btn-custom secondary">View More<i class="fas fa-arrow-right"></i>
+                  <a href="product-details.php?id=<?php echo $arr['id'] ?>&categories=<?php echo $arr['categories'] ?>" class="btn-custom secondary">View More<i class="fas fa-arrow-right"></i>
                   </a>
                 </div>
               </div>
