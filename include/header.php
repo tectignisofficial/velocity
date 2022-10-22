@@ -7,8 +7,8 @@
             <div class="col-md-6">
               <ul class="left-side">
                 <li>
-                  <a href="#">
-                    <i class="fas fa-phone"></i>
+                  <a href="tel:9970026458">
+                    <i class="fas fa-phone" style="transform:rotate(90deg)"></i>
                     +91 9970026458
                   </a>
                 </li>

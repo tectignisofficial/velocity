@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Organicz - Spices HTML Template</title>
+    <title>Velocity Exim Goods</title>
 
     <!-- Vendor Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
@@ -53,9 +53,9 @@
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami pork picanha tongue venison strip steak
               </p>
-               <a href="contactus.php" class="btn-custom primary shadow-none"
+               <!-- <a href="contactus.php" class="btn-custom primary shadow-none"
                 >Contact us <i class="fas fa-arrow-right"></i
-              ></a>
+              ></a> -->
             </div>
           </div>
           <div class="banner-item text-center">
@@ -67,9 +67,9 @@
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami pork picanha tongue venison strip steak
               </p>
-              <a href="contactus.php" class="btn-custom primary shadow-none"
+              <!-- <a href="contactus.php" class="btn-custom primary shadow-none"
                 >Contact us <i class="fas fa-arrow-right"></i
-              ></a>
+              ></a> -->
             </div>
           </div>
           <div class="banner-item text-center">
@@ -82,9 +82,9 @@
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami pork picanha tongue venison strip steak
               </p>
-               <a href="contactus.php" class="btn-custom primary shadow-none"
+               <!-- <a href="contactus.php" class="btn-custom primary shadow-none"
                 >Contact us <i class="fas fa-arrow-right"></i
-              ></a>
+              ></a> -->
             </div>
           </div>
         </div>
@@ -229,16 +229,15 @@
           <div class="col-lg-5">
             <div class="section-title-wrap">
               <h2 class="title text-white mb-0">
-                High Quality <span class="custom-primary">Spices </span> And
-                Delievery Services
+                High Quality <span class="custom-primary">Jaggery </span>
               </h2>
               <div class="d-flex align-items-center mt-5">
                 <span class="icon">
                   <i class="fab fa-whatsapp"></i>
                 </span>
                 <div class="contact-info ml-4">
-                  <span>gmail@gmail.com</span>
-                  <h4>+91 9970026458</h4>
+                 <a href="mailto:sales@veg.com"><span>sales@veg.com</span></a> 
+                 <a href="https://wa.me/9970026458" target="_blank"><h4>+91 9970026458</h4></a> 
                 </div>
               </div>
             </div>
@@ -252,7 +251,7 @@
           <div class="col-lg-6">
             <div class="progress-bars pt-5">
               <div class="sigma_progress">
-                <h6>Spices</h6>
+                <h6>Jaggery</h6>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -336,7 +335,7 @@
                     </span>
                     <div class="icon-descr">
                       <h3>1500+</h3>
-                      <h4>Spices</h4>
+                      <h4>Jaggery</h4>
                     </div>
                   </div>
                 </div>
@@ -368,15 +367,14 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <div class="video-player-trigger">
-              <a
+              <!-- <a
                 href="https://www.youtube.com/watch?v=ySITvuQ1K74"
                 class="popup-youtube"
               >
                 <i class="fas fa-play"></i>
-              </a>
+              </a> -->
             </div>
-            <h3>Getting Started With Masala</h3>
-            <p>Check Out Our Video To know more</p>
+            <h3>Getting Started With Jaggery</h3>
           </div>
         </div>
       </div>
@@ -430,7 +428,7 @@
     <!-- Testimonials End -->
 
     <!-- CTA Start -->
-    <section class="section section-padding">
+    <!-- <section class="section section-padding">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -461,7 +459,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- CTA End -->
 
 
