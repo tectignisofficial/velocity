@@ -88,9 +88,8 @@ border-bottom-right-radius: .3rem;
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
-                 <h2 style="color:#F73614"> Velocity Exim Goods</h2>
-                  <!-- <img src="../assets\img\logo\LOGO.png" -->
-                    <!-- style="width:60%;" alt="logo"> -->
+                 <!-- <h2 style="color:#F73614"> Velocity Exim Goods</h2> -->
+                  <img src="dist/img/logo.png" style="width:60%;" alt="logo">
                     <!-- <h6>UNIQUE PATHOLOGY</h6> -->
                 </div><br>
 

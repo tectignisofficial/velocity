@@ -32,9 +32,9 @@
       <nav class="navbar">
         <div class="container-fluid">
           <!-- Logo -->
-          <a class="navbar-brand d-lg-none" href="index.html">
+          <!-- <a class="navbar-brand d-lg-none" href="index.html">
             <img src="assets/img/logo.png" alt="logo" />
-          </a>
+          </a> -->
           <!-- Menu -->
           <div class="header-control-left">
              <div class="logo-wrapper">
@@ -69,3 +69,4 @@
       </nav>
     </header>
     <!-- Header End -->
+    
