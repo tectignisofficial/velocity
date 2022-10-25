@@ -27,7 +27,7 @@ if(isset($_POST['submit']))
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velocity - Contact Us</title>
+    <title>Velocity Exim Goods</title>
 
     <!-- Vendor Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
@@ -65,7 +65,7 @@ if(isset($_POST['submit']))
                     <h1>Contact Us</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                         </ol>
                     </nav>
@@ -78,14 +78,14 @@ if(isset($_POST['submit']))
     <!-- Subheader End -->
     <!-- Contact Info Start -->
     <div class="section section-padding extra-padding">
-        <div class="container">
+        <div class="container mt-3">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="ct-info-box">
                         <div class="ct-info-box-icon">
                             <i class="flaticon-call"></i>
                             <h5>Call Me</h5>
-                            <span>+91 9970026458</span>
+                            <a href="tel:+919970026458"><span>+91 9970026458</span></a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,9 @@ if(isset($_POST['submit']))
                         <div class="ct-info-box-icon">
                             <i class="flaticon-email"></i>
                             <h5>Mail Me</h5>
-                            <span>sales@veg.com / ceo@veg.com</span>
+                            <a href="mailto:sales@veg.com"><span>sales@veg.com</span></a>
+                            <a href="mailto:ceo@veg.com"><span>ceo@veg.com</span></a>
+                            <!-- <span>sales@veg.com / ceo@veg.com</span> -->
                         </div>
                     </div>
                 </div>
@@ -103,7 +105,7 @@ if(isset($_POST['submit']))
                         <div class="ct-info-box-icon">
                             <i class="flaticon-location"></i>
                             <h5>Find Me</h5>
-                            <span>205 Prabhu Shrine Plot 85 Sector 22 Kamothe-410209, Dist-Raigad State-Maharashtra, India.</span>
+                             <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank"> <span>205 Prabhu Shrine Plot 85 Sector 22 Kamothe-410209</span></a>  
                         </div>
                     </div>
                 </div>
@@ -125,7 +127,8 @@ if(isset($_POST['submit']))
                         <input type="text" placeholder="Full Name" class="form-control" name="name" id="name">
                     </div>
                     <div class="form-group col-lg-6">
-                        <input type="text" placeholder="Phone No." class="form-control" name="phone" id="phone">
+                        <input type="text" placeholder="Phone No." minlength="10" maxlength="10" class="form-control phone1" name="phone" id="phone1">
+                        <span id="phone1Span" class="mb-4"></span>
                     </div>
                     <div class="form-group col-lg-12">
                         <input type="email" placeholder="Email Address" class="form-control" name="email" id="email">
@@ -163,9 +166,54 @@ if(isset($_POST['submit']))
     <script src="assets/js/plugins/jquery.countdown.min.js"></script>
     <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
     <script src="assets/js/plugins/slick.min.js"></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Organicz Scripts -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+		
+        $("#phone1Span").hide();
+   $(".phone1").keyup(function(){
+    mobile_check();
+  });
+  function mobile_check(){
+      let mobileno=$(".phone1").val();
+      let vali =/^\d{10}$/; 
+      if(!vali.test(mobileno)){
+   validenqtMobile="no";
+           $("#phone1Span").show().html("*Invalid Mobile No").css("color","red").focus();
+           mobile_err=false;
+        return false;
+      }
+      else{
+   validenqtMobile="yes";
+          $("#phone1Span").hide(); 
+      }
+  }
+
+  $("#submit").click(function(){
+  mobile_err=true;
+        mobile_check();
+          
+          if((mobile_err=true)){
+             return true;
+          }
+          else{return false;}
+     });
+
+   let  validenqtMobile;
+
+let submitenant = document.getElementById("submit");
+submitenant.addEventListener("click", function(){
+
+if(validenqtMobile == "no"){
+    swal("Oops...", "Please fill all the fields", "error");
+}
+    else{
+        swal("Saved!", " Thank you for contacting form submitted successfully", "success");
+    }
+});
+   </script>
   </body>
 
   <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:50:23 GMT -->
