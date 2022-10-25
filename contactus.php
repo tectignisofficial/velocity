@@ -27,7 +27,7 @@ if(isset($_POST['submit']))
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velocity - Contact Us</title>
+    <title>Velocity Exim Goods</title>
 
     <!-- Vendor Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
@@ -65,7 +65,7 @@ if(isset($_POST['submit']))
                     <h1>Contact Us</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                         </ol>
                     </nav>
