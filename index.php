@@ -465,7 +465,7 @@
 
 
     <!-- Instagram Start -->
-    <div class="insta style-6 section">
+    <!-- <div class="insta style-6 section">
       <div class="container">
         <div class="section-title-wrap section-header text-center">
           <h2 class="title">Gallery</h2>
@@ -497,7 +497,7 @@
          
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Instagram End -->
 
   <?php 
