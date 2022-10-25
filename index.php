@@ -50,7 +50,7 @@
               </h1>
               <p class="subtitle text-white">
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
-                andouille. Pastrami pork picanha tongue venison strip steak
+                andouille. Pastrami picanha tongue venison strip steak
               </p>
                <!-- <a href="contactus.php" class="btn-custom primary shadow-none"
                 >Contact us <i class="fas fa-arrow-right"></i
@@ -77,10 +77,12 @@
                 <span class="custom-primary">Spices </span> From Authentic
                 Source , Grab It
               </h1>
+
               <p class="subtitle text-white">
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami pork picanha tongue venison strip steak
               </p>
+
                <!-- <a href="contactus.php" class="btn-custom primary shadow-none"
                 >Contact us <i class="fas fa-arrow-right"></i
               ></a> -->
