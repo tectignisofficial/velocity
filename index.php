@@ -1,3 +1,4 @@
+<?php include("include/config.php");?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -22,6 +23,11 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+    <style>
+      .slick-arrow{
+        display:none  !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -465,39 +471,26 @@
 
 
     <!-- Instagram Start -->
-    <!-- <div class="insta style-6 section">
+    <div class="insta style-6 section">
       <div class="container">
         <div class="section-title-wrap section-header text-center">
           <h2 class="title">Gallery</h2>
         </div>
         <div class="insta-slider">
+        <?php
+              $sql=mysqli_query($conn,"select * from gallery limit 18");   
+              while($arr=mysqli_fetch_array($sql)){
+              ?>
           <div class="insta-item">
             <div class="insta-item-inner">
-              <img src="assets/img/ig/slider/1.jpg" alt="insta" />
+              <img src="admin/dist/img/images/<?php echo $arr['file'] ?>" alt="insta" />
             </div>
           </div>
-          <div class="insta-item">
-            <div class="insta-item-inner">
-          
-              <img src="assets/img/ig/slider/2.jpg" alt="insta" />
-            </div>
-          </div>
-          <div class="insta-item">
-            <div class="insta-item-inner">
-       
-              <img src="assets/img/ig/slider/3.jpg" alt="insta" />
-            </div>
-          </div>
-          <div class="insta-item">
-            <div class="insta-item-inner">
-          
-              <img src="assets/img/ig/slider/4.jpg" alt="insta" />
-            </div>
-          </div>
-         
+      
+          <?php } ?>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- Instagram End -->
 
   <?php 
