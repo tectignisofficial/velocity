@@ -107,30 +107,26 @@ if(isset($_GET['gen'])){
                                                 <th>Name</th>
                                                 <th>phone</th>
                                                 <th>Email</th>
-                                                 <th>Description</th>
+                                                <th>Subject</th>
+                                                 <th>Message</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php 
-                        
-                        $sql=mysqli_query($conn,"select * from `contact`");
-                     $count=1;
-                         while($arr=mysqli_fetch_array($sql)){
-                        ?>
-                                            <tr>
-                                                <td> <?php echo $count;?> </td>
-                                                <td> <?php echo $arr['name'];?> </td>
-                                                <td><?php echo $arr['phone'];?></td>
-                                                <td> <?php echo $arr['email'];?></td>
-                                                <td> <?php echo $arr['description'];?></td>
-                                                  <a href="contact_us.php?gen=<?php echo $arr['id'];?>">
-                                             
-                         </a>
-                                              
-                                                
-                                               
-                                                                                </tr>
-                                                                                <?php $count++;   } ?>
+                                        <?php
+                         $sql=mysqli_query($conn,"SELECT * FROM contact");
+                        $count=1;
+                         while($row=mysqli_fetch_array($sql)){ 
+                         ?>
+
+                      <tr>
+                        <td><?php echo $count;?></td>
+                        <td><?php echo $row['name'];?></td>
+                        <td><?php echo $row['phone'];?></td>
+                        <td><?php echo $row['email'];?></td>
+                        <td><?php echo $row['subject'];?></td>
+                        <td><?php echo $row['message'];?></td>
+                                             </tr>
+                                                 <?php $count++;   } ?>
                                              
                                    
                                     </table>
