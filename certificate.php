@@ -64,16 +64,36 @@
 
         <div class="row">
          <div class="col-lg-4 col-md-5 col-sm-6">
-            <a href="#" class="ct-category">
+            <a href="assets/img/PDF/fssai_licenses.pdf" class="ct-category" target="_blank">
               <div class="ct-category-icon">
                 <i class="fas fa-file-pdf"></i>
-                <h5>Jaggery</h5>
+                <h5>Fassai Licence</h5>
                 <span>Download</span>
               </div>
             </a>
           </div>
+          <div class="col-lg-4 col-md-5 col-sm-6">
+              <a href="assets/img/PDF/Apeda RCMC.pdf" class="ct-category" target="_blank">
+                <div class="ct-category-icon">
+                  <i class="fas fa-file-pdf"></i>
+                  <h5>Apeda RCMC</h5>
+                  <span>Download</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-6">
+              <a href="assets/img/PDF/Import export code.pdf" class="ct-category" target="_blank">
+                <div class="ct-category-icon">
+                  <i class="fas fa-file-pdf"></i>
+                  <h5>Import Export Code</h5>
+                  <span>Download</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </section>
     <!-- Products End -->
       
