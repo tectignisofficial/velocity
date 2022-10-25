@@ -35,10 +35,9 @@
     include("include/header.php"); ?>
 
     <!-- Banner Start -->
-    <div class="banner banner-video dark-overlay">
-      <video autoplay muted loop id="myVideo">
-        <source src="assets/vids/video-banner.mp4" type="video/mp4" />
-      </video>
+    <!-- <div class="banner banner-video dark-overlay"> -->
+    <div class="banner dark-overlay dark-overlay-2" style="background-image: url('assets/img/banner.webp');">
+
       <!-- Prev Arrow -->
       <i class="slider-prev fas fa-arrow-left slick-arrow"></i>
       <div class="container">
@@ -154,9 +153,9 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="about-wrapper">
-              <img src="assets/img/about-1.jpg" alt="image" />
+              <img src="assets/img/about-1.1.webp" alt="image" />
               <img
-                src="assets/img/about-2.jpg"
+                src="assets/img/about-2.webp"
                 class="image-2 parallax_scroll_down"
                 alt="image"
               />
@@ -169,12 +168,10 @@
                 Experience
               </h2>
               <h3 class="subtitle">
-                We Provide The Best Spices in The Market.
+                We Provide The Best Jaggery in The Market.
               </h3>
               <p class="subtitle mb-0">
-                Lorem Ipsum is simply dummy text of free available in market the
-                printing and typesetting industry has been the industry's
-                standard dummy text ever.
+              Velocity Exim Goods stands for extremes in Fortune, Happiness and Spirituality.
               </p>
             </div>
             <div class="about-content">
@@ -185,19 +182,19 @@
                       <span class="check">
                         <i class="fas fa-check"></i>
                       </span>
-                      Nsectetur cing elit.
+                      Provides The Best Quality Products.
                     </li>
                     <li>
                       <span class="check">
                         <i class="fas fa-check"></i>
                       </span>
-                      Nsectetur cing elit.
+                      Vast Experience In Exports.
                     </li>
                     <li>
                       <span class="check">
                         <i class="fas fa-check"></i>
                       </span>
-                      Nsectetur cing elit.
+                      High Class Professionals.
                     </li>
                   </ul>
                 </div>
@@ -212,7 +209,7 @@
               </div>
             </div>
             <div class="about-btn">
-              <a href="#" class="btn-custom primary shadow-none" tabindex="0"
+              <a href="aboutus.php" class="btn-custom primary shadow-none" tabindex="0"
                 >Discover more <i class="fas fa-arrow-right"></i>
               </a>
             </div>
