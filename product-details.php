@@ -1,5 +1,6 @@
-<?php
- include 'include/config.php';
+<?php 
+include("include/config.php");
+
  $id=$_GET['id'];
 $categories=$_GET['categories'];
 
