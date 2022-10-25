@@ -3,8 +3,9 @@
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:41:23 GMT -->
-  <head>
+<!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:41:23 GMT -->
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organicz - Spices HTML Template</title>
@@ -24,84 +25,99 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+
     <style>
-      	.gslide-description, .description-bottom{
-		display: none !important;
-	}
+    @media(max-width: 768px) {
+        .subheader {
+            padding: 150px 0 70px !important;
+        }
+    }
 
+    .subheader {
+        padding: 280px 0 140px !important;
+        position: relative;
+    }
     </style>
-  </head>
+    <style>
+    .gslide-description,
+    .description-bottom {
+        display: none !important;
+    }
+    </style>
+</head>
 
-  <body>
+<body>
     <!-- Preloader start -->
 
     <!-- Preloader End -->
     <!-- partial:partia/__sidenav.html -->
- 
+
 
 
     <?php 
     include("include/header.php"); ?>
 
     <!-- Subheader Start -->
-  <div class="subheader bg-cover dark-overlay dark-overlay-2" style="background-image: url('assets/img/subheader.webp')">
-    <div class="absolute-subheader">
-    <div class="container">
-      <div class="subheader-inner">
-        <h1>Gallery</h1>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
-          </ol>
-        </nav>
-        <img src="assets/img/veg/8.png" class="image-1" alt="img">
-        <img src="assets/img/veg/5.png" class="image-2" alt="img">
-      </div>
+    <div class="subheader bg-cover dark-overlay dark-overlay-2"
+        style="background-image: url('assets/img/subheader.webp')">
+        <div class="absolute-subheader">
+            <div class="container">
+                <div class="subheader-inner">
+                    <h1>Gallery</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                        </ol>
+                    </nav>
+                    <img src="assets/img/veg/8.png" class="image-1" alt="img">
+                    <img src="assets/img/veg/5.png" class="image-2" alt="img">
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
-  <!-- Subheader End -->
+    <!-- Subheader End -->
 
 
-  <section class="py-3 mb-3">
-        <div class="container">
+    <section class="py-3 mb-3 mt-5 pt-5">
+        <div class="container pt-5">
             <div class="tp-title-line-2"></div>
-          
-
-               
 
 
-                        <div class="row portfolio-container" data-aos="fade-up">
 
 
-						<?php     
+
+            <div class="row portfolio-container" data-aos="fade-up">
+
+
+                <?php     
                              $sql=mysqli_query($conn,"select * from gallery");
 
                              while($arr=mysqli_fetch_array($sql)){
                              ?>
 
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                                
-
-                                <a href="admin/dist/img/images/<?php echo $arr['file'];?>" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox preview-link text-center" title="Trusts & Hospitals">
-                                    <img src="admin/dist/img/images/<?php echo $arr['file'];?>" class="img-fluid" style="height:300px; width:415px; border-radius: 5%; " alt="">
-                                </a>
-                                <h5 class="product-title text-center"> <a
-                    href="gallery.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['title'];?></a>
-                </h5>
-                            </div>
-							<?php }  ?>
-                        </div>
-
-               
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
 
 
-
-
-
+                    <a href="admin/dist/img/images/<?php echo $arr['file'];?>" data-gallery="portfolioGallery"
+                        class="portfolio-lightbox preview-link text-center" title="Trusts & Hospitals">
+                        <img src="admin/dist/img/images/<?php echo $arr['file'];?>" class="img-fluid"
+                            style="height:300px; width:415px; border-radius: 5%; " alt="">
+                    </a>
+                    <h5 class="product-title text-center"> <a
+                            href="gallery.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['title'];?></a>
+                    </h5>
+                </div>
+                <?php }  ?>
             </div>
+
+
+
+
+
+
+
+        </div>
 
     </section>
 
@@ -109,7 +125,7 @@
 
 
 
-  <?php 
+    <?php 
     include("include/footer.php"); ?>
 
     <!-- Vendor Scripts -->
@@ -131,64 +147,64 @@
     <!-- Organicz Scripts -->
     <script src="assets/js/main.js"></script>
 
-    
-<script>
-	
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
-      });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+    <script>
+    /**
+     * Porfolio isotope and filter
+     */
+    window.addEventListener('load', () => {
+        let portfolioContainer = select('.portfolio-container');
+        if (portfolioContainer) {
+            let portfolioIsotope = new Isotope(portfolioContainer, {
+                itemSelector: '.portfolio-item'
+            });
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
+            let portfolioFilters = select('#portfolio-flters li', true);
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
-    }
+            on('click', '#portfolio-flters li', function(e) {
+                e.preventDefault();
+                portfolioFilters.forEach(function(el) {
+                    el.classList.remove('filter-active');
+                });
+                this.classList.add('filter-active');
 
-  });
+                portfolioIsotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                });
+                portfolioIsotope.on('arrangeComplete', function() {
+                    AOS.refresh()
+                });
+            }, true);
+        }
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+    });
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-</script>
-  </body>
+    /**
+     * Initiate portfolio lightbox 
+     */
+    const portfolioLightbox = GLightbox({
+        selector: '.portfolio-lightbox'
+    });
 
-  <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:50:23 GMT -->
+    /**
+     * Portfolio details slider
+     */
+    new Swiper('.portfolio-details-slider', {
+        speed: 400,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        }
+    });
+    </script>
+</body>
+
+<!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:50:23 GMT -->
+
 </html>

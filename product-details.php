@@ -27,7 +27,20 @@ $categories=$_GET['categories'];
   <!-- Organicz Style sheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+
+          <style>
+    @media(max-width: 768px) {
+        .subheader {
+            padding: 150px 0 70px !important;
+        }
+    }
+
+    .subheader {
+        padding: 280px 0 140px !important;
+        position: relative;
+    }
+    </style>
 </head>
 
 <body>

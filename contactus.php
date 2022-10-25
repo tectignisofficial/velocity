@@ -23,8 +23,9 @@ if(isset($_POST['submit']))
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:41:23 GMT -->
-  <head>
+<!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:41:23 GMT -->
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velocity Exim Goods</title>
@@ -43,22 +44,37 @@ if(isset($_POST['submit']))
     <!-- Organicz Style sheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
-  </head>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
 
-  <body>
+       <style>
+    @media(max-width: 768px) {
+        .subheader {
+            padding: 150px 0 70px !important;
+        }
+    }
+
+    .subheader {
+        padding: 280px 0 140px !important;
+        position: relative;
+    }
+    </style>
+
+</head>
+
+<body>
     <!-- Preloader start -->
 
     <!-- Preloader End -->
     <!-- partial:partia/__sidenav.html -->
- 
+
 
 
     <?php 
-    include("include/header.php"); ?>
+    include("include/header.php");?>
 
- <!-- Subheader Start -->
-    <div class="subheader bg-cover dark-overlay dark-overlay-2" style="background-image: url('assets/img/subheader.webp')">
+    <!-- Subheader Start -->
+    <div class="subheader bg-cover dark-overlay dark-overlay-2"
+        style="background-image: url('assets/img/subheader.webp')">
         <div class="absolute-subheader">
             <div class="container">
                 <div class="subheader-inner">
@@ -105,7 +121,8 @@ if(isset($_POST['submit']))
                         <div class="ct-info-box-icon">
                             <i class="flaticon-location"></i>
                             <h5>Find Me</h5>
-                             <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank"> <span>205 Prabhu Shrine Plot 85 Sector 22 Kamothe-410209</span></a>  
+                            <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank"> <span>205 Prabhu Shrine
+                                    Plot 85 Sector 22 Kamothe-410209</span></a>
                         </div>
                     </div>
                 </div>
@@ -121,13 +138,14 @@ if(isset($_POST['submit']))
                 <p class="subtitle">
                 </p>
             </div>
-            <form class=""  method="post">
+            <form class="" method="post">
                 <div class="row">
                     <div class="form-group col-lg-6">
                         <input type="text" placeholder="Full Name" class="form-control" name="name" id="name">
                     </div>
                     <div class="form-group col-lg-6">
-                        <input type="text" placeholder="Phone No." minlength="10" maxlength="10" class="form-control phone1" name="phone" id="phone1">
+                        <input type="text" placeholder="Phone No." minlength="10" maxlength="10"
+                            class="form-control phone1" name="phone" id="phone1">
                         <span id="phone1Span" class="mb-4"></span>
                     </div>
                     <div class="form-group col-lg-12">
@@ -137,7 +155,8 @@ if(isset($_POST['submit']))
                         <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
                     </div>
                     <div class="form-group col-lg-12">
-                        <textarea name="message" id="message" class="form-control" placeholder="Type your message" rows="8"></textarea>
+                        <textarea name="message" id="message" class="form-control" placeholder="Type your message"
+                            rows="8"></textarea>
                     </div>
                 </div>
                 <button type="submit" name="submit" id="submit" class="btn-custom primary">Submit</button>
@@ -150,7 +169,7 @@ if(isset($_POST['submit']))
 
 
 
-  <?php 
+    <?php 
     include("include/footer.php"); ?>
 
     <!-- Vendor Scripts -->
@@ -171,50 +190,50 @@ if(isset($_POST['submit']))
     <script src="assets/js/main.js"></script>
 
     <script>
-		
-        $("#phone1Span").hide();
-   $(".phone1").keyup(function(){
-    mobile_check();
-  });
-  function mobile_check(){
-      let mobileno=$(".phone1").val();
-      let vali =/^\d{10}$/; 
-      if(!vali.test(mobileno)){
-   validenqtMobile="no";
-           $("#phone1Span").show().html("*Invalid Mobile No").css("color","red").focus();
-           mobile_err=false;
-        return false;
-      }
-      else{
-   validenqtMobile="yes";
-          $("#phone1Span").hide(); 
-      }
-  }
-
-  $("#submit").click(function(){
-  mobile_err=true;
+    $("#phone1Span").hide();
+    $(".phone1").keyup(function() {
         mobile_check();
-          
-          if((mobile_err=true)){
-             return true;
-          }
-          else{return false;}
-     });
+    });
 
-   let  validenqtMobile;
-
-let submitenant = document.getElementById("submit");
-submitenant.addEventListener("click", function(){
-
-if(validenqtMobile == "no"){
-    swal("Oops...", "Please fill all the fields", "error");
-}
-    else{
-        swal("Saved!", " Thank you for contacting form submitted successfully", "success");
+    function mobile_check() {
+        let mobileno = $(".phone1").val();
+        let vali = /^\d{10}$/;
+        if (!vali.test(mobileno)) {
+            validenqtMobile = "no";
+            $("#phone1Span").show().html("*Invalid Mobile No").css("color", "red").focus();
+            mobile_err = false;
+            return false;
+        } else {
+            validenqtMobile = "yes";
+            $("#phone1Span").hide();
+        }
     }
-});
-   </script>
-  </body>
 
-  <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:50:23 GMT -->
+    $("#submit").click(function() {
+        mobile_err = true;
+        mobile_check();
+
+        if ((mobile_err = true)) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+
+    let validenqtMobile;
+
+    let submitenant = document.getElementById("submit");
+    submitenant.addEventListener("click", function() {
+
+        if (validenqtMobile == "no") {
+            swal("Oops...", "Please fill all the fields", "error");
+        } else {
+            swal("Saved!", " Thank you for contacting form submitted successfully", "success");
+        }
+    });
+    </script>
+</body>
+
+<!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:50:23 GMT -->
+
 </html>
