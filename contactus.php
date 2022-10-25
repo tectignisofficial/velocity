@@ -1,10 +1,33 @@
+<?php 
+include("include/config.php");
+
+if(isset($_POST['submit']))
+{
+  $name = $_POST['name'];
+  $phone = $_POST['phone'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
+
+  $sql=mysqli_query($conn,"INSERT INTO `contact`(`name`, `phone`, `email`,`subject`, `message`) VALUES ('$name','$phone',' $email','$subject','$message')");
+  
+  if($sql==1){
+    echo '<script>alert("Successfully submitted");</script>';
+    header("location:contactus.php");
+}else {
+    echo '<script>alert("oops...somthing went wrong");</script>';
+}
+        
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:41:23 GMT -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Organicz - Spices HTML Template</title>
+    <title>Velocity - Contact Us</title>
 
     <!-- Vendor Stylesheets -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
@@ -62,7 +85,7 @@
                         <div class="ct-info-box-icon">
                             <i class="flaticon-call"></i>
                             <h5>Call Me</h5>
-                            <span>+438 329 122</span>
+                            <span>+91 9970026458</span>
                         </div>
                     </div>
                 </div>
@@ -71,7 +94,7 @@
                         <div class="ct-info-box-icon">
                             <i class="flaticon-email"></i>
                             <h5>Mail Me</h5>
-                            <span>joe@example.com</span>
+                            <span>sales@veg.com / ceo@veg.com</span>
                         </div>
                     </div>
                 </div>
@@ -80,7 +103,7 @@
                         <div class="ct-info-box-icon">
                             <i class="flaticon-location"></i>
                             <h5>Find Me</h5>
-                            <span>445 Mount Eden Road, Mount Eden, Auckland.</span>
+                            <span>205 Prabhu Shrine Plot 85 Sector 22 Kamothe-410209, Dist-Raigad State-Maharashtra, India.</span>
                         </div>
                     </div>
                 </div>
@@ -94,28 +117,27 @@
             <div class="section-title-wrap section-header">
                 <h2 class="title">Send me a Message </h2>
                 <p class="subtitle">
-                    Send me a message about anything, let it be about cooking or a get away for a cup of coffee.
                 </p>
             </div>
-            <form class="mf_form_validate ajax_submit" action="http://metropolitanhost.com/themes/templatemoster/html/masala/sendmail.php" method="post" enctype="multipart/form-data">
+            <form class=""  method="post">
                 <div class="row">
                     <div class="form-group col-lg-6">
-                        <input type="text" placeholder="Full Name" class="form-control" name="name" value="">
+                        <input type="text" placeholder="Full Name" class="form-control" name="name" id="name">
                     </div>
                     <div class="form-group col-lg-6">
-                        <input type="text" placeholder="Phone No." class="form-control" name="phone" value="">
+                        <input type="text" placeholder="Phone No." class="form-control" name="phone" id="phone">
                     </div>
                     <div class="form-group col-lg-12">
-                        <input type="email" placeholder="Email Address" class="form-control" name="email" value="">
+                        <input type="email" placeholder="Email Address" class="form-control" name="email" id="email">
                     </div>
                     <div class="form-group col-lg-12">
-                        <input type="text" placeholder="Subject" class="form-control" name="subject" value="">
+                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
                     </div>
                     <div class="form-group col-lg-12">
-                        <textarea name="message" class="form-control" placeholder="Type your message" rows="8"></textarea>
+                        <textarea name="message" id="message" class="form-control" placeholder="Type your message" rows="8"></textarea>
                     </div>
                 </div>
-                <button type="submit" class="btn-custom primary">Submit</button>
+                <button type="submit" name="submit" id="submit" class="btn-custom primary">Submit</button>
                 <div class="server_response w-100"></div>
             </form>
         </div>

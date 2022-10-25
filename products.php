@@ -68,7 +68,7 @@
         <div class="row">
 
         <?php
-            $sql=mysqli_query($conn,"select * from products");   
+            $sql=mysqli_query($conn,"select * from products limit 5");   
             while($arr=mysqli_fetch_array($sql)){
             ?>
 
