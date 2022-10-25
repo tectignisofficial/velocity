@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:41:23 GMT -->
@@ -45,13 +46,13 @@
           <div class="banner-item text-center">
             <div class="banner-inner">
               <h1 class="title text-white">
-                Spices Brings Taste To Your
-                <span class="custom-primary"> Kitchen </span>
+                High Quality 
+                <span class="custom-primary"> Jaggery </span>
               </h1>
-              <p class="subtitle text-white">
+              <!-- <p class="subtitle text-white">
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami picanha tongue venison strip steak
-              </p>
+              </p> -->
                <!-- <a href="contactus.php" class="btn-custom primary shadow-none"
                 >Contact us <i class="fas fa-arrow-right"></i
               ></a> -->
@@ -60,12 +61,12 @@
           <div class="banner-item text-center">
             <div class="banner-inner">
               <h1 class="title text-white">
-                Get All <span class="custom-primary"> Spices </span> Here
+                Get All <span class="custom-primary"> Jaggery </span> Here
               </h1>
-              <p class="subtitle text-white">
+              <!-- <p class="subtitle text-white">
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami pork picanha tongue venison strip steak
-              </p>
+              </p> -->
               <!-- <a href="contactus.php" class="btn-custom primary shadow-none"
                 >Contact us <i class="fas fa-arrow-right"></i
               ></a> -->
@@ -74,14 +75,14 @@
           <div class="banner-item text-center">
             <div class="banner-inner">
               <h1 class="title text-white">
-                <span class="custom-primary">Spices </span> From Authentic
+                <span class="custom-primary">Jaggery </span> From Authentic
                 Source , Grab It
               </h1>
 
-              <p class="subtitle text-white">
+              <!-- <p class="subtitle text-white">
                 Bacon ipsum dolor amet ball tip pork chop cow tenderloin
                 andouille. Pastrami pork picanha tongue venison strip steak
-              </p>
+              </p> -->
 
                <!-- <a href="contactus.php" class="btn-custom primary shadow-none"
                 >Contact us <i class="fas fa-arrow-right"></i
@@ -100,47 +101,47 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-5 col-sm-6">
-            <a href="#" class="ct-category">
+            <a href="products.php" class="ct-category">
               <div class="ct-category-icon">
                 <i class="flaticon-spices"></i>
                 <h5>Jaggery</h5>
-                <span>17 Spicess</span>
+                <!-- <span>17 Spicess</span> -->
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-md-5 col-sm-6">
-            <a href="#" class="ct-category">
+            <a href="products.php" class="ct-category">
               <div class="ct-category-icon">
                 <i class="flaticon-spices"></i>
                 <h5>Raisin</h5>
-                <span>17 Spicess</span>
+                <!-- <span>17 Spicess</span> -->
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-md-5 col-sm-6">
-            <a href="#" class="ct-category">
+            <a href="products.php" class="ct-category">
               <div class="ct-category-icon">
                 <i class="flaticon-ginger"></i>
                 <h5>Turmeric Powder</h5>
-                <span>87 Spicess</span>
+                <!-- <span>87 Spicess</span> -->
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-md-5 col-sm-6 offset-lg-2">
-            <a href="#" class="ct-category">
+            <a href="products.php" class="ct-category">
               <div class="ct-category-icon">
                 <i class="flaticon-spices-1"></i>
                 <h5>Cashew</h5>
-                <span>36 Spicess</span>
+                <!-- <span>36 Spicess</span> -->
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-md-5 col-sm-6">
-            <a href="#" class="ct-category">
+            <a href="products.php" class="ct-category">
               <div class="ct-category-icon">
                 <i class="flaticon-spices"></i>
                 <h5>Vegetable Powder</h5>
-                <span>42 Spicess</span>
+                <!-- <span>42 Spicess</span> -->
               </div>
             </a>
           </div>

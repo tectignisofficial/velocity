@@ -84,12 +84,12 @@
       <div class="row">
         <div class="col-lg-6">
         <p>
-                  Velocity Exim Goods stands for extremes in Fortune, Happiness and Spirituality. The Team at Velocity Exim Goods believes that "to care is to be committed". And caring for human well being makes it even more challenging in the current scenario of environmental hazards and dynamic lifestyle of today's generation. We would like to show our care by providing the quality products in Spices and Herbs Industry which are needed by the world.
-                  Velocity Exim Goods is formed with an objective of supplying the best quality Spices, Herbs, Agro Commodities, Fruits and Vegetables in whatever India is good at producing. We have two divisions. Spices, Herbs, Agro Commodities division and Fruits and Vegetables division. Both divisions are headed by experienced individuals who are well versed in the respective divisions with huge passion to serve the global market with lot of care. 
+                  Velocity Exim Goods stands for extremes in Fortune, Happiness and Spirituality. The Team at Velocity Exim Goods believes that "to care is to be committed". And caring for human well being makes it even more challenging in the current scenario of environmental hazards and dynamic lifestyle of today's generation. We would like to show our care by providing the quality products LIKE JAGGERY, JAGGERY POWDER, RAISIN, CASHW, VEGETABLE POWDERS, TURMERIC POWDER.
+                  Velocity Exim goods is formed with an objective of supplying best quality PRODUCTS in whatever India is good at producing. Supply chain management is headed by experienced indivisuals.
                   </p> 
         </div>
         <div class="col-lg-6">
-          <p>We have two divisions. Spices, Herbs, Agro Commodities division and Fruits and Vegetables division. Both divisions are headed by experienced individuals who are well versed in the respective divisions with huge passion to serve the global market with lot of care. We are a group of people who have vast experience in the corporate sector and started with passion towards our vision and mission by strictly following our core values. We are a proud team who have similar thoughts and worked in various backgrounds like Manufacturing, Sales and Marketing, Human Resources and have vast experience in exports. We believe in doing it right in whatever you believe.
+          <p>We are a group of people who have vast experience in the corporate sector and started with passion towards our vision and mission by strictly following our core values. We are a proud team who have similar thoughts and worked in various backgrounds like Manufacturing, Sales and Marketing, Human Resources and have vast experience in exports. We believe in doing it right in whatever you believe.
                   The team in Velocity Exim Goods are high class professionals with immense passion and deep understanding about the sourcing, processing, packing and shipping. We understand the reality and wanted to arrest the challenges faced by importers in this industry across the globe.
                  </p>
         </div>
