@@ -1,5 +1,7 @@
 <?php 
 include("include/config.php");
+error_reporting(0);
+ini_set('display_errors', 0);
 
  $id=$_GET['id'];
 $categories=$_GET['categories'];
@@ -27,7 +29,8 @@ $categories=$_GET['categories'];
   <!-- Organicz Style sheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- Favicon -->
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico" />
+
 
           <style>
     @media(max-width: 768px) {
