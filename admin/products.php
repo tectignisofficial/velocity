@@ -150,7 +150,7 @@ if(isset($_GET['eid'])){
       height: 36px;
       border-radius: 100%;
     }
-  </style>
+  </style> 
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

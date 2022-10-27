@@ -5,7 +5,7 @@ $page=substr($_SERVER['SCRIPT_NAME'],strrpos($_SERVER['SCRIPT_NAME'],"/")+1);
       <!-- Brand Logo -->
       <a href="index.php" class="brand-link">
         <!-- <h2  class="text-center">Velocity</h2> -->
-     <img src="dist/img/logo.png" width="80%" class="rounded pl-3 ml-3" alt="">
+     <img src="dist/img/logo.webp" width="80%" class="rounded pl-3 ml-3" alt="">
       </a>
 
       <!-- Sidebar -->

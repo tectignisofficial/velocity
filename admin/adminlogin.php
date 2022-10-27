@@ -89,7 +89,7 @@ border-bottom-right-radius: .3rem;
 
                 <div class="text-center">
                  <!-- <h2 style="color:#F73614"> Velocity Exim Goods</h2> -->
-                  <img src="dist/img/logo.png" style="width:60%;" alt="logo">
+                  <img src="dist/img/logo.webp" style="width:60%;" alt="logo">
                     <!-- <h6>UNIQUE PATHOLOGY</h6> -->
                 </div><br>
 

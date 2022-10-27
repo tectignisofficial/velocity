@@ -309,7 +309,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 icon-col">
+                            <!-- <div class="col-lg-6 icon-col">
                                 <div class="icon-box">
                                     <span class="icon">
                                         <i class="flaticon-medal"></i>
@@ -319,7 +319,7 @@
                                         <h4>Awards Won</h4>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-lg-6 icon-col">
                                 <div class="icon-box">
                                     <span class="icon">
@@ -331,7 +331,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 icon-col">
+                            <!-- <div class="col-lg-6 icon-col">
                                 <div class="icon-box">
                                     <span class="icon">
                                         <i class="flaticon-candidate"></i>
@@ -341,7 +341,7 @@
                                         <h4>Members</h4>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -352,7 +352,7 @@
 
     <!-- Video Style 1 Start -->
     <section class="section video-style-1 bg-cover bg-center dark-overlay dark-overlay-2"
-        style="background-image: url('assets/img/video.jpg')">
+        style="background-image: url('assets/img/video.webp')">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
@@ -374,7 +374,7 @@
 
 
     <!-- Testimonials Start -->
-    <section class="section light-bg bg-cover" style="background-image: url('assets/img/bg/2.jpg')">
+    <section class="section light-bg bg-cover" style="background-image: url('assets/img/bg/2.webp')">
         <div class="container">
             <div class="section-title-wrap section-header text-center">
                 <h2 class="title">Testimonials</h2>

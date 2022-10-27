@@ -41,7 +41,7 @@
                     <div class="logo-wrapper">
                         <!-- Logo -->
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo.png" alt="logo" />
+                            <img src="assets/img/logo.webp" alt="logo" />
                         </a>
                     </div>
                 </div>

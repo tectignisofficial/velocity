@@ -4780,7 +4780,7 @@ align-items: center;
 .progress-icon .icon-wrapper{
   padding: 15px;
   background-color: #9f4103;
-  margin-top: -200px;
+  margin-top: -122px;
   position: relative;
   z-index: 8;
 }
@@ -4790,7 +4790,7 @@ align-items: center;
   align-items: center;
   padding: 60px 25px;
   border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
 }
 
 .progress-icon .icon-wrapper .row .icon-col:nth-child(2) .icon-box,
