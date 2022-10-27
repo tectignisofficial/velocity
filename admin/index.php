@@ -15,7 +15,7 @@ if(!isset($_SESSION['id']))
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin | Index</title>
   <!-- Favicons -->
-  <link href="dist/img/favicon.png" rel="icon">
+  <link href="dist/img/favicon.ico" rel="icon">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
