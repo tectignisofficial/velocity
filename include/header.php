@@ -1,9 +1,3 @@
-<?php
-              $sql=mysqli_query($conn,"select * from edit_profile");   
-              while($arr=mysqli_fetch_array($sql)){
-              ?>    
-          <?php } ?>
-    
     <!-- Header Start -->
     <header class="main-header header-1 can-sticky">
         <!-- Topbar -->
