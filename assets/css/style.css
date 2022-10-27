@@ -777,7 +777,7 @@ blockquote p{
   padding: 80px 0;
 }
 .section.section-padding{
-  padding: 80px 0 50px;
+  padding: 80px 0 0px;
 }
 .section.extra-padding,
 .section.section-padding.extra-padding{
@@ -5266,7 +5266,7 @@ align-items: center;
     padding-bottom: 60px;
   }
   .section.section-padding{
-    padding: 60px 0 30px;
+    padding: 60px 0 0px;
   }
 
   .banner,
