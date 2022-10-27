@@ -61,8 +61,7 @@ $categories=$_GET['categories'];
           <h1>Product Details</h1>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Shop</a></li>
+              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
                 Product Details
               </li>
@@ -320,7 +319,7 @@ $categories=$_GET['categories'];
 
       <div class="row">
       <?php
-            $sql=mysqli_query($conn,"select * from products where categories='$categories' limit 3");   
+            $sql=mysqli_query($conn,"select * from products where categories='$categories'");   
             while($arr=mysqli_fetch_array($sql)){
             ?>
         <div class="col-lg-4 col-md-6">

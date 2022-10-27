@@ -173,12 +173,11 @@
                 <div class="col-lg-6">
                     <div class="section-title-wrap">
                         <h2 class="title">
-                            We Have <span class="custom-primary">35 Years </span> Of
-                            Experience
+                           We Provide The Best <span class="custom-primary">Jaggery </span>in The Market.
                         </h2>
-                        <h3 class="subtitle">
+                        <!-- <h3 class="subtitle">
                             We Provide The Best Jaggery in The Market.
-                        </h3>
+                        </h3> -->
                         <p class="subtitle mb-0">
                             Velocity Exim Goods stands for extremes in Fortune, Happiness and Spirituality.
                         </p>
@@ -207,14 +206,14 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-sm-6">
+                            <!-- <div class="col-sm-6">
                                 <div class="experience-box">
                                     <span class="text">
                                         Since <br />
                                         2008
                                     </span>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="about-btn">

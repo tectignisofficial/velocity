@@ -20,7 +20,7 @@
     <!-- Organicz Style sheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico" />
 
           <style>
     @media(max-width: 768px) {
@@ -110,7 +110,7 @@
     </div>
   </section>
   <!-- CTA End -->
-  <section class="section section-padding pt-0">
+  <section class="section section-padding pb-3">
       <div class="container">
         <div class="section-title-wrap section-header">
           <h2 class="title text-center">Team</h2>
