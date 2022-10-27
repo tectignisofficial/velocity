@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-md-5 col-sm-6 footer-widget">
+                        <div class="col-md-7 col-sm-6 footer-widget">
                           <!-- <img src="assets/img/logo.png" alt="" style=" width:100%"> -->
                             <span for="" style="color:#fff">Jaggery improved immune system, it detoxify body, improves
                                 digestive system. Raisin, Cashews, Turmeric & vegetable powders are rich source of major
@@ -19,22 +19,18 @@
                                 <li><a href="products.php">Vegetable Powder</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-4 col-sm-6 footer-widget">
+                        <!-- <div class="col-md-4 col-sm-6 footer-widget">
                             <h5 class="widget-title">Legal</h5>
                             <ul>
                                 <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Refund Policy</a></li>
-                                <li><a href="#">Cookie Policy</a></li>
                                 <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Refund Policy</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-lg-4 footer-widget contact-widget">
                     <h5 class="widget-title">Get In Touch</h5>
-                    <p>
+                    <p class="d-flex">
                         <i class="flaticon-location"></i>
                         <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank"> 205 Prabhu Shrine Plot 85 Sector 22 Kamothe-410209</a>  
                     </p>
