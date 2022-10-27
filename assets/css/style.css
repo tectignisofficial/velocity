@@ -2707,7 +2707,7 @@ table img{
   text-align: center;
   border-radius: 8px;
   margin-bottom: 30px;
-}
+} 
 .ct-category .ct-category-icon{
   color: #9f4103;
   width: 100%;
@@ -5435,9 +5435,9 @@ align-items: center;
     min-width: 0;
   }
 
-  .subheader .absolute-subheader{
+  /* .subheader .absolute-subheader{
     bottom: -40%;
-  }
+  } */
   .subheader .absolute-subheader .subheader-inner .image-1,
   .subheader .absolute-subheader .subheader-inner .image-2{
     display: none;

@@ -75,7 +75,7 @@
           <p class="subtitle">We take care of your health...</p>
         </div>
 
-        <div class="row">
+        <div class="row mt-5">
          <div class="col-lg-4 col-md-5 col-sm-6">
             <a href="assets/img/PDF/fssai_licenses.pdf" class="ct-category" target="_blank">
               <div class="ct-category-icon">
