@@ -25,9 +25,9 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
     <style>
-      .slick-arrow{
+      /* .slick-arrow{
         display:none  !important;
-      }
+      } */
     </style>
   </head>
 
@@ -397,7 +397,7 @@
                         <div class="ct-testimonial-item-inner">
                             <i class="flaticon-left-quote"></i>
                             <span>Rahul Gaikwad</span>
-                            <p>I highly appreciate organic India for their Pure quality. I regularly buy Turmeric Powder
+                            <p>I highly appreciate velocity for their Pure quality. I regularly buy Turmeric Powder
                                 from here. I had recently done a self assessment on its quality.</p>
                         </div>
                     </div>
@@ -405,7 +405,7 @@
                         <div class="ct-testimonial-item-inner">
                             <i class="flaticon-left-quote"></i>
                             <span>Mahesh Niwate</span>
-                            <p>I highly appreciate organic India for their Pure quality. I regularly buy Turmeric Powder
+                            <p>I highly appreciate velocity for their Pure quality. I regularly buy Turmeric Powder
                                 from here.</p>
                         </div>
                     </div>
@@ -469,7 +469,7 @@
               ?>
           <div class="insta-item">
             <div class="insta-item-inner">
-              <img src="admin/dist/img/images/<?php echo $arr['file'] ?>" alt="insta" />
+              <img src="admin/dist/img/images/<?php echo $arr['file'] ?>" alt="insta" / style="height:350px; width50px">
             </div>
           </div>
       
