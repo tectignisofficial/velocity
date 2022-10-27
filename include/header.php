@@ -17,13 +17,14 @@
                     <div class="col-md-6">
                         <ul class="right-side navbar">
                             <li class="menu-item menu-item-has-children">
-                                <a href="#">.</a>
+                            <a href="admin/adminlogin.php">Admin Login</a>
+
 
                             </li>
 
-                            <li>
-                                <a href="login.html">Admin Login</a>
-                            </li>
+                            <!-- <li>
+                                <a href="admin/adminlogin.php">Admin Login</a>
+                            </li> -->
                         </ul>
                     </div>
                 </div>

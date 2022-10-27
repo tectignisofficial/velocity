@@ -23,7 +23,7 @@
     <!-- Organicz Style sheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico" />
     <style>
       /* .slick-arrow{
         display:none  !important;
@@ -464,7 +464,7 @@
         </div>
         <div class="insta-slider">
         <?php
-              $sql=mysqli_query($conn,"select * from gallery limit 18");   
+              $sql=mysqli_query($conn,"select * from gallery limit 10");   
               while($arr=mysqli_fetch_array($sql)){
               ?>
           <div class="insta-item">
@@ -479,8 +479,7 @@
     </div>
     <!-- Instagram End -->
 
-    <?php 
-    include("include/footer.php"); ?>
+    <?php include("include/footer.php"); ?>
 
     <!-- Vendor Scripts -->
     <script src="assets/js/plugins/jquery-3.4.1.min.js"></script>
