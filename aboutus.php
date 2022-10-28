@@ -1,3 +1,5 @@
+<?php include("include/config.php");?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <!-- Mirrored from metropolitanhost.com/themes/templatemoster/html/masala/?i=150835&pr_code=z2x5P5eD1537DEbaJXgDTNkIIC33HC by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Aug 2022 05:41:23 GMT -->
