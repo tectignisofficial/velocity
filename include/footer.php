@@ -38,15 +38,15 @@
                     <ul>
                     <li class="d-flex">
                         <i class="flaticon-location"></i>
-                        <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank" class="d-flex"> 205 Prabhu Shrine Plot 85 Sector 22 Kamothe-410209</a>  
+                        <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank" class="d-flex"><?php echo $arr['address'];?></a>  
                         </li>
                         <li class="d-flex"> 
                             <i class="flaticon-email"></i>
-                            <a href="mailto:sales@veg.com">sales@veg.com</a>
+                            <a href="mailto:<?php echo $arr['email1'];?>"><?php echo $arr['email1'];?></a>
                         </li>
                         <li class="d-flex"> 
                             <i class="flaticon-email"></i>
-                            <a href="mailto:ceo@veg.com">ceo@veg.com</a>
+                            <a href="mailto:<?php echo $arr['email2'];?>"><?php echo $arr['email2'];?></a>
                         </li>
                         <li class="d-flex">
                             <i class="flaticon-call"></i>

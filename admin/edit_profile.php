@@ -1,17 +1,28 @@
 <?php 
 include("include/config.php");
 
+
+session_start();
+if(!isset($_SESSION['id']))
+{                                                                                       
+  header("location:adminlogin.php");
+}
+
 if(isset($_POST['submit'])){
   $phone=$_POST['phone']; 
+  $email1=$_POST['email1']; 
+  $email2=$_POST['email2']; 
+  $address=$_POST['address']; 
+
   $id=$_GET['eid'];
 
  
   if (isset($_GET['eid'])){
     $id=$_GET['eid'];
-    $sql=mysqli_query($conn,"UPDATE `edit_profile` SET `phone`='$phone' WHERE id='$id'");
+    $sql=mysqli_query($conn,"UPDATE `edit_profile` SET `phone`='$phone', `email1`='$email1',`email2`='$email2',`address`='$address'  WHERE id='$id'");
  } 
  else {
-  $sql=mysqli_query($conn,"INSERT INTO `edit_profile`(`phone`) VALUES ('$phone')");
+  $sql=mysqli_query($conn,"INSERT INTO `edit_profile`(`phone`),(`email1`),(`email2`),(`address`) VALUES ('$phone'),('$email1'),('$email2'),('$address')");
 
   
   if($sql==1){
@@ -37,6 +48,10 @@ if(isset($_GET['eid'])){
   $sql=mysqli_query($conn,"select * from edit_profile where id='$_GET[eid]'");
   $row=mysqli_fetch_array($sql);
   $phone=$row['phone'];
+  $email1=$row['email1'];
+  $email2=$row['email2'];
+  $address=$row['address'];
+
 }
   
 ?>
@@ -142,6 +157,33 @@ if(isset($_GET['eid'])){
                           </div>
                         </div>
                       </div>
+                      <div class="col-md-12">
+                        <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Email 1</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" name="email1" value="<?php echo $email1;?>">
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Email 2</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" name="email2" value="<?php echo $email2;?>">
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Address</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="address" value="<?php echo $address;?>">
+                            </select>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <input type="submit" class="btn btn-primary btn-icon-text" value="Submit" name="submit">
 
@@ -168,6 +210,9 @@ if(isset($_GET['eid'])){
                         <tr>
                           <th>Sr.No</th>
                           <th>Phone No.</th>
+                          <th>Email 1</th>
+                          <th>Email 2</th>
+                          <th>Address</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -182,6 +227,15 @@ if(isset($_GET['eid'])){
                           </td>
                           <td>
                             <?php echo $row["phone"]; ?>
+                          </td>
+                          <td>
+                            <?php echo $row["email1"]; ?>
+                          </td>
+                          <td>
+                            <?php echo $row["email2"]; ?>
+                          </td>
+                          <td>
+                            <?php echo $row["address"]; ?>
                           </td>
                           <td>
                             <a class="btn btn-primary btn-rounded btn-icon"

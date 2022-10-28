@@ -116,8 +116,8 @@ if(isset($_POST['submit']))
                         <div class="ct-info-box-icon">
                             <i class="flaticon-email"></i>
                             <h5>Mail Me</h5>
-                            <a href="mailto:sales@veg.com"><span>sales@veg.com</span></a>
-                            <a href="mailto:ceo@veg.com"><span>ceo@veg.com</span></a>
+                            <a href="mailto:<?php echo $arr['email1'];?>"><span><?php echo $arr['email1'];?></span></a>
+                            <a href="mailto:<?php echo $arr['email2'];?>"><span><?php echo $arr['email2'];?></span></a>
                             <!-- <span>sales@veg.com / ceo@veg.com</span> -->
                         </div>
                     </div>
@@ -127,8 +127,7 @@ if(isset($_POST['submit']))
                         <div class="ct-info-box-icon">
                             <i class="flaticon-location"></i>
                             <h5>Find Me</h5>
-                            <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank"> <span>205 Prabhu Shrine
-                                    Plot 85 Sector 22 Kamothe-410209</span></a>
+                            <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank"> <span><?php echo $arr['address'];?></span></a>
                         </div>
                     </div>
                 </div>

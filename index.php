@@ -246,7 +246,7 @@
                                 <i class="fab fa-whatsapp"></i>
                             </span>
                             <div class="contact-info ml-4">
-                                <a href="mailto:sales@veg.com"><span>sales@veg.com</span></a>
+                                <a href="mailto:<?php echo $arr['email1'];?>"><span><?php echo $arr['email1'];?></span></a>
                                 <a href="https://wa.me/<?php echo $arr['phone'];?>" target="_blank">
                                     <h4>+91 <?php echo $arr['phone'];?></h4>
                                 </a>
