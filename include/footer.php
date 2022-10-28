@@ -35,14 +35,18 @@
                 </div>
                 <div class="col-lg-4 footer-widget contact-widget">
                     <h5 class="widget-title">Get In Touch</h5>
-                    <p class="d-flex">
-                        <i class="flaticon-location"></i>
-                        <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank"> 205 Prabhu Shrine Plot 85 Sector 22 Kamothe-410209</a>  
-                    </p>
                     <ul>
+                    <li class="d-flex">
+                        <i class="flaticon-location"></i>
+                        <a href="https://goo.gl/maps/dY979RaPcmP6uDRq6" target="_blank" class="d-flex"> 205 Prabhu Shrine Plot 85 Sector 22 Kamothe-410209</a>  
+                        </li>
                         <li class="d-flex"> 
                             <i class="flaticon-email"></i>
                             <a href="mailto:sales@veg.com">sales@veg.com</a>
+                        </li>
+                        <li class="d-flex"> 
+                            <i class="flaticon-email"></i>
+                            <a href="mailto:ceo@veg.com">ceo@veg.com</a>
                         </li>
                         <li class="d-flex">
                             <i class="flaticon-call"></i>

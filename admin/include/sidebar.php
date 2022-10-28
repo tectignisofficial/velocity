@@ -51,7 +51,7 @@ $page=substr($_SERVER['SCRIPT_NAME'],strrpos($_SERVER['SCRIPT_NAME'],"/")+1);
            </li>
            <li class="nav-item">
              <a href="edit_profile.php" class="nav-link <?= $page == 'edit_profile.php' ? 'active':'' ?>">
-              <i class="nav-icon fa-solid fa-image text-skyblue"></i>
+              <i class="nav-icon fa-solid fa-pen text-skyblue"></i>
                <p>
                 Edit Profile
                </p>

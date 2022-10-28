@@ -137,7 +137,7 @@ if(isset($_GET['eid'])){
                         <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Phone</label>
                         <div class="col-sm-9">
-                            <input type="number" class="form-control" maxlength="10"; minlength="10" name="phone" value="<?php echo $phone;?>">
+                            <input type="tel" class="form-control" maxlength="10"; minlength="10" name="phone" value="<?php echo $phone;?>">
                             </select>
                           </div>
                         </div>

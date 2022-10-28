@@ -231,6 +231,11 @@
     <section class="section why-us-2 dark-overlay dark-overlay-2">
         <div class="container">
             <div class="row">
+            <?php 
+                        
+                        $sql=mysqli_query($conn,"select * from edit_profile");
+                         $arr=mysqli_fetch_array($sql)
+                        ?> 
                 <div class="col-lg-5">
                     <div class="section-title-wrap">
                         <h2 class="title text-white mb-0">
@@ -242,8 +247,8 @@
                             </span>
                             <div class="contact-info ml-4">
                                 <a href="mailto:sales@veg.com"><span>sales@veg.com</span></a>
-                                <a href="https://wa.me/9970026458" target="_blank">
-                                    <h4>+91 9970026458</h4>
+                                <a href="https://wa.me/<?php echo $arr['phone'];?>" target="_blank">
+                                    <h4>+91 <?php echo $arr['phone'];?></h4>
                                 </a>
                             </div>
                         </div>

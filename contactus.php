@@ -107,6 +107,7 @@ if(isset($_POST['submit']))
                             <i class="flaticon-call"></i>
                             <h5>Call Me</h5>
                             <a href="tel:<?php echo $arr['phone'];?>"><span>+91 <?php echo $arr['phone'];?></span></a>
+                            
                         </div>
                     </div>
                 </div>
