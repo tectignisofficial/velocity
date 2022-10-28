@@ -81,20 +81,20 @@ $categories=$_GET['categories'];
   <section class="section product-single extra-padding pb-0">
     <div class="container">
                     
-      <div class="row">
+      <div class="row mt-3">
       <?php
                     $sql=mysqli_query($conn,"select * from products  where id='$id'");   
                     while($arr=mysqli_fetch_array($sql)){
                     ?>
 
-        <div class="col-lg-4 col-md-5">
+        <div class="col-lg-5 col-md-5">
           <!-- Main Thumb -->
           <div class="product-thumb">
-            <img src="admin/dist/img/images/<?php echo $arr['file'] ?> "  alt="detail" />
+            <img src="admin/dist/img/images/<?php echo $arr['file'] ?>" style="height:250px; width:400px; border-radius:2%"  alt="detail" />
           </div>
           <!-- /Main Thumb -->
         </div>
-        <div class="col-lg-8 col-md-7">
+        <div class="col-lg-7 col-md-7">
           <div class="product-content">
             <!-- Product Title -->
             <h2 class="title"><?php echo $arr['product_name'] ?></h2>
@@ -121,7 +121,7 @@ $categories=$_GET['categories'];
 
             <!-- Product Short Description -->
             <p>
-            <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['title'];?></a>
+            <a href="product_details.php?id=<?php echo $arr['id'] ?>" style="color:#000"><?php echo $arr['title'];?></a>
 
             </p>
             <!-- /Product Short Description -->
@@ -157,13 +157,13 @@ $categories=$_GET['categories'];
               <li>
                 <span>Categories: </span>
                 <div class="product-meta-item">
-                <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['categories'];?></a>
+                <a href="product_details.php?id=<?php echo $arr['id'] ?>" style="color:#000"><?php echo $arr['categories'];?></a>
                 </div>
               </li>
               <li>
                 <span>Tags: </span>
                 <div class="product-meta-item">
-                <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['tag'];?></a>
+                <a href="product_details.php?id=<?php echo $arr['id'] ?>" style="color:#000"><?php echo $arr['tag'];?></a>
                 </div>
               </li>
               <!-- <li>
@@ -320,7 +320,7 @@ $categories=$_GET['categories'];
     <div class="container">
       <h4>Related Products</h4>
 
-      <div class="row">
+      <div class="row"> 
       <?php
             $sql=mysqli_query($conn,"select * from products where categories='$categories'");   
             while($arr=mysqli_fetch_array($sql)){
@@ -328,7 +328,7 @@ $categories=$_GET['categories'];
         <div class="col-lg-4 col-md-6">
           <div class="ct-product">
             <div class="ct-product-thumbnail">
-              <a href="#"><img src="admin/dist/img/images/<?php echo $arr['file'] ?>"  style="height:300px; width:300px; border-radius:2%" alt="product" /></a>
+              <a href="admin/dist/img/images/<?php echo $arr['file'] ?>"><img src="admin/dist/img/images/<?php echo $arr['file'] ?>"  style="height:300px; width:300px; border-radius:2%" alt="product" /></a>
               <div class="ct-product-controls">
                 <a href="product-details.php?id=<?php echo $arr['id'] ?>&categories=<?php echo $arr['categories'] ?>" class="btn-custom secondary">View More <i class="fas fa-arrow-right"></i>
                 </a>
