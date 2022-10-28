@@ -96,12 +96,17 @@ if(isset($_POST['submit']))
     <div class="section section-padding extra-padding">
         <div class="container mt-3">
             <div class="row">
+            <?php 
+                        
+                        $sql=mysqli_query($conn,"select * from edit_profile");
+                         $arr=mysqli_fetch_array($sql)
+                        ?> 
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="ct-info-box">
                         <div class="ct-info-box-icon">
                             <i class="flaticon-call"></i>
                             <h5>Call Me</h5>
-                            <a href="tel:+919970026458"><span>+91 9970026458</span></a>
+                            <a href="tel:<?php echo $arr['phone'];?>"><span>+91 <?php echo $arr['phone'];?></span></a>
                         </div>
                     </div>
                 </div>

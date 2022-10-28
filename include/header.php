@@ -4,12 +4,17 @@
         <div class="topbar">
             <div class="container-fluid">
                 <div class="row">
+                <?php 
+                        
+                        $sql=mysqli_query($conn,"select * from edit_profile");
+                         $arr=mysqli_fetch_array($sql)
+                        ?> 
                     <div class="col-md-6">
                         <ul class="left-side">
                             <li>
-                                <a href="tel:9970026458">
+                                <a href="tel:<?php echo $arr['phone'];?>">
                                     <i class="fas fa-phone" style="transform:rotate(90deg)"></i>
-                                    +91 9970026458
+                                   <span>+91 <?php echo $arr['phone'];?></span>
                                 </a>
                             </li>
                         </ul>

@@ -4,6 +4,11 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row">
+                    <?php 
+                        
+                        $sql=mysqli_query($conn,"select * from edit_profile");
+                         $arr=mysqli_fetch_array($sql)
+                        ?> 
                         <div class="col-md-7 col-sm-6 footer-widget">
                           <!-- <img src="assets/img/logo.png" alt="" style=" width:100%"> -->
                             <span for="" style="color:#fff">Jaggery improved immune system, it detoxify body, improves
@@ -41,7 +46,7 @@
                         </li>
                         <li class="d-flex">
                             <i class="flaticon-call"></i>
-                          <a href="tel:+919970026458">  +91 9970026458</a>
+                          <a href="tel:<?php echo $arr['phone'];?>">+91 <?php echo $arr['phone'];?></a>
                         </li>
                     </ul>
                 </div>
