@@ -1,9 +1,3 @@
-<?php 
-                        
-                        $sql=mysqli_query($conn,"select * from edit_profile");
-                         $arr=mysqli_fetch_array($sql)
-                        ?>     
-    
     <!-- Header Start -->
     <header class="main-header header-1 can-sticky">
         <!-- Topbar -->
@@ -13,10 +7,9 @@
                     <div class="col-md-6">
                         <ul class="left-side">
                             <li>
-                                <a href="tel:<?php echo $arr['phone'];?>">
+                                <a href="tel:9970026458">
                                     <i class="fas fa-phone" style="transform:rotate(90deg)"></i>
-                                    <!-- +91 9970026458 -->
-                                    <span><?php echo $arr['phone'];?></span>
+                                    +91 9970026458
                                 </a>
                             </li>
                         </ul>
