@@ -44,6 +44,9 @@ if(isset($_GET['delid'])){
 }
 
 $phone="";
+$email1="";
+$email2="";
+$address="";
 if(isset($_GET['eid'])){
   $sql=mysqli_query($conn,"select * from edit_profile where id='$_GET[eid]'");
   $row=mysqli_fetch_array($sql);
