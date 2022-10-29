@@ -45,7 +45,7 @@
                 <div class="header-control-left">
                     <div class="logo-wrapper">
                         <!-- Logo -->
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.php">
                             <img src="assets/img/logo.webp" alt="logo" />
                         </a>
                     </div>
