@@ -123,10 +123,10 @@ $categories=$_GET['categories'];
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-4">
                                 <strong>Tags : </strong>
                             </div>
-                            <div class="col-9">
+                            <div class="col-8">
                                 <a href="product_details.php?id=<?php echo $arr['id'] ?>"
                                     style="color:#000"><?php echo $arr['tag'];?></a>
                             </div>
