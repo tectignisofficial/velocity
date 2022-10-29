@@ -115,7 +115,7 @@ $categories=$_GET['categories'];
                         <!-- Product Meta -->
                         <div class="row">
                             <div class="col-4">
-                                <strong>Categories: </strong>
+                                <strong>Categories : </strong>
                             </div>
                             <div class="col-8">
                                 <a class="cat" href="product_details.php?id=<?php echo $arr['id'] ?>"
