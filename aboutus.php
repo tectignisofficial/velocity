@@ -100,7 +100,7 @@
         <div class="col-lg-6">
         <p>
                   Velocity Exim Goods stands for extremes in Fortune, Happiness and Spirituality. The Team at Velocity Exim Goods believes that "to care is to be committed". And caring for human well being makes it even more challenging in the current scenario of environmental hazards and dynamic lifestyle of today's generation. We would like to show our care by providing the quality products LIKE JAGGERY, JAGGERY POWDER, RAISIN, CASHW, VEGETABLE POWDERS, TURMERIC POWDER.
-                  Velocity Exim goods is formed with an objective of supplying best quality PRODUCTS in whatever India is good at producing. Supply chain management is headed by experienced indivisuals.
+                  Velocity Exim goods is formed with an objective of supplying best quality Product in whatever India is good at producing. Supply chain management is headed by experienced indivisuals.
                   </p> 
         </div>
         <div class="col-lg-6">
