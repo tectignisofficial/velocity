@@ -142,20 +142,7 @@ $categories=$_GET['categories'];
 
             <!-- Additional Information -->
             <div class="product-additional-info">
-                <!-- <ul class="nav" id="bordered-tab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="tab-product-desc-tab" data-toggle="pill" href="#tab-product-desc" role="tab"
-              aria-controls="tab-product-desc" aria-selected="true">Description</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="tab-product-info-tab" data-toggle="pill" href="#tab-product-info" role="tab"
-              aria-controls="tab-product-info" aria-selected="false">Additional Information</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="tab-product-reviews-tab" data-toggle="pill" href="#tab-product-reviews" role="tab"
-              aria-controls="tab-product-reviews" aria-selected="false">Reviews (25)</a>
-          </li>
-        </ul> -->
+    
                 <div class="tab-content" id="bordered-tabContent">
                     <?php
                     $sql=mysqli_query($conn,"select * from products  where id='$id'");   
@@ -169,106 +156,7 @@ $categories=$_GET['categories'];
                     </div>
                     <?php }  ?>
 
-                    <!-- <div class="tab-pane fade" id="tab-product-info" role="tabpanel" aria-labelledby="tab-product-info-tab">
-            <h4>Additional Information</h4>
-
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Attributes</th>
-                  <th scope="col">Values</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Color</strong></td>
-                  <td>blue, red, yellow, green</td>
-                </tr>
-                <tr>
-                  <td><strong>Material</strong></td>
-                  <td>wood, plastic, stainless steel</td>
-                </tr>
-              </tbody>
-            </table>
-          </div> -->
-                    <!-- <div class="tab-pane fade" id="tab-product-reviews" role="tabpanel" aria-labelledby="tab-product-reviews-tab">
-            <h4>Leave a Review</h4>
-
-            <div class="ct-rating-wrapper">
-              <div class="ct-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span>Your Review</span>
-            </div>
-            <div class="comment-form">
-              <form method="post">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" placeholder="Full Name" name="fname" value="" />
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <input type="email" class="form-control" placeholder="Email Address" name="email" value="" />
-                  </div>
-                  <div class="col-md-12 form-group">
-                    <textarea class="form-control" placeholder="Type your comment..." name="comment"
-                      rows="7"></textarea>
-                  </div>
-                </div>
-
-                <button type="submit" class="btn-custom primary" name="button">
-                  Post Review
-                </button>
-              </form>
-            </div>
-            <div class="comments-list">
-              <ul>
-                <li class="comment-item">
-                  <img src="assets/img/people/people-1.jpg" alt="comment author" />
-                  <div class="comment-body">
-                    <h5>Heather Beirutus</h5>
-                    <div class="ct-rating">
-                      <i class="fas fa-star active"></i>
-                      <i class="fas fa-star active"></i>
-                      <i class="fas fa-star active"></i>
-                      <i class="fas fa-star active"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <span>Posted on: September 13 2021</span>
-                    <p>
-                      Leverage agile frameworks to provide a robust synopsis
-                      for high level overviews. Iterative approaches to
-                      corporate strategy foster collaborative thinking to
-                      further the overall value proposition.
-                    </p>
-                    <a href="#" class="reply-link"> Reply </a>
-                  </div>
-                </li>
-                <li class="comment-item">
-                  <img src="assets/img/people/people-2.jpg" alt="comment author" />
-                  <div class="comment-body">
-                    <h5>Heather Beirutus</h5>
-                    <div class="ct-rating">
-                      <i class="fas fa-star active"></i>
-                      <i class="fas fa-star active"></i>
-                      <i class="fas fa-star active"></i>
-                      <i class="fas fa-star active"></i>
-                      <i class="fas fa-star active"></i>
-                    </div>
-                    <span>Posted on: September 13 2021</span>
-                    <p>
-                      Leverage agile frameworks to provide a robust synopsis
-                      for high level overviews. Iterative approaches
-                    </p>
-                    <a href="#" class="reply-link"> Reply </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div> -->
+            
                 </div>
             </div>
         </div>
