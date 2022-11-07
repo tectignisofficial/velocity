@@ -148,6 +148,9 @@ if(isset($_GET['eid'])){
                 <div class="card-header">
                 <h4 class="card-title">Edit Profile</h4>  
                 </div>
+                <?php 
+                if(isset($_GET['eid'])){
+                ?>
                 <div class="card-body">
                   <form action="" class="form-sample" method="post">
                     <div class="row"> 
@@ -188,10 +191,11 @@ if(isset($_GET['eid'])){
                         </div>
                       </div>
                     </div>
-                    <input type="submit" class="btn btn-primary btn-icon-text" value="Submit" name="submit">
+                    <input type="submit" class="btn btn-primary btn-icon-text" value="Update" name="submit">
 
                   </form>
                 </div>
+                <?php } ?>
               </div>
             </div>
           </div>
@@ -211,7 +215,6 @@ if(isset($_GET['eid'])){
                     <table id="example1" class="table table-bordered table-striped">
                       <thead>
                         <tr>
-                          <th>Sr.No</th>
                           <th>Phone No.</th>
                           <th>Email 1</th>
                           <th>Email 2</th>
@@ -225,9 +228,6 @@ if(isset($_GET['eid'])){
 											while($row = mysqli_fetch_array($portfolio)) {
 											?>
                         <tr class="table">
-                          <td>
-                            <?php echo $row["id"]; ?>
-                          </td>
                           <td>
                             <?php echo $row["phone"]; ?>
                           </td>

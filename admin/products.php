@@ -59,7 +59,7 @@ $product_name='';
 $title='';
 $categories='';
 $tag='';
-$description='';
+
 $file='';
 $description='';
 if(isset($_GET['eid'])){
@@ -69,7 +69,7 @@ if(isset($_GET['eid'])){
   $title=$row['title'];
   $categories=$row['categories'];
   $tag=$row['tag'];
-  $description=$row['description'];
+  // $description=$row['description'];
   $file=$row['file'];
   $description=$row['description'];
 }
@@ -150,10 +150,33 @@ if(isset($_GET['eid'])){
       height: 36px;
       border-radius: 100%;
     }
-  </style> 
+  </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+  <div class="container">
+    <!-- View Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Header</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          </div>
+
+          <div class="modal-body body1">
+        
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <div class="wrapper">
     <!-- Preloader
     <div class="preloader flex-column justify-content-center align-items-center">
@@ -218,15 +241,16 @@ if(isset($_GET['eid'])){
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Categories</b></label>
                           <div class="col-sm-9">
-                          <select class="form-control select2" data-placeholder="Categories" style="width: 100%;" name="categories">
-                                    <option selected="selected" data-placeholder="Categories">Select Categories</option>
-                                    <?php $sql=mysqli_query ($conn,"select * from add_categories");
+                            <select class="form-control select2" data-placeholder="Categories" style="width: 100%;"
+                              name="categories">
+                              <option selected="selected" data-placeholder="Categories">Select Categories</option>
+                              <?php $sql=mysqli_query ($conn,"select * from add_categories");
                                     while($arr=mysqli_fetch_array($sql)){
                                     ?>
-                                    <option><?php echo $arr['categories'];?></option>
-                                    <?php }?>
-                                    <option selected="selected"><?php echo $categories; ?></option>
-                                    </select>
+                              <option><?php echo $arr['categories'];?></option>
+                              <?php }?>
+                              <option selected="selected"><?php echo $categories; ?></option>
+                            </select>
                           </div>
                         </div>
 
@@ -251,12 +275,13 @@ if(isset($_GET['eid'])){
                           </div>
                         </div>
 
-                       
+
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Description</b></label>
                           <div class="col-sm-9">
-                            <textarea id="summernote" style="display:none" placeholder="Description" id="exampleFormControlTextarea5"
-                              rows="3" name="description" required><?php echo $description;?></textarea>
+                            <textarea id="summernote" style="display:none" placeholder="Description"
+                              id="exampleFormControlTextarea5" rows="3" name="description"
+                              required><?php echo $description;?></textarea>
                           </div>
                         </div>
                       </div>
@@ -284,13 +309,13 @@ if(isset($_GET['eid'])){
                     <table id="example1" class="table table-bordered table-striped">
                       <thead>
                         <tr>
-                          <th>Sr.No</th>
-                          <th>Product Name</th>
-                          <th>Title</th>
+
+                          <th width="100px">Product Name</th>
+                          <th width="300px">Title</th>
                           <th>Categories</th>
-                          <th>Tags</th>
+
                           <th>Image</th>
-                          <th>Description</th>
+                          <th>Description</th> 
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -300,9 +325,7 @@ if(isset($_GET['eid'])){
 											while($row = mysqli_fetch_array($portfolio)) {
 											?>
                         <tr class="table">
-                          <td>
-                            <?php echo $row["id"]; ?>
-                          </td>
+
                           <td>
                             <?php echo $row["product_name"]; ?>
                           </td>
@@ -311,17 +334,28 @@ if(isset($_GET['eid'])){
                           </td>
                           <td>
                             <?php echo $row["categories"]; ?>
-                          </td> <td>
+                          </td> 
+                          <td>
                             <?php echo $row["tag"]; ?>
                           </td>
+
+                          
                           <td><img src="dist/img/images/<?php echo $row["file"]; ?>"></td>
+                          <!-- <td>
+                            
+                          </td> -->
                           <td>
-                            <?php echo $row["description"]; ?>
-                          </td>
-                          <td>
+                            <a class="btn btn-primary btn-rounded btn-icon btnmod1"
+                              data-id="<?php echo $row["id"]; ?>" 
+                            
+                              >
+                              
+                              <i class="fa fa-eye"></i></a>
+
                             <a class="btn btn-primary btn-rounded btn-icon"
-                              href="products.php?eid=<?php echo $row['id']; ?>" title="Edit Blog"><i
-                                class="fa fa-edit"></i></a>
+                              href="products.php?eid=<?php echo $row['id']; ?>">
+                              
+                              <i class="fa fa-edit"></i></a>
 
                             <a class="btn btn-danger btn-rounded btn-icon"
                               href="products.php?delid=<?php echo $row['id']; ?>" onclick="return checkDelete()"
@@ -352,7 +386,6 @@ if(isset($_GET['eid'])){
     <!-- main-panel ends -->
 
   </div>
-  <!-- jQuery -->
   <script src="plugins/jquery/jquery.min.js"></script>
   <!-- jQuery UI 1.11.4 -->
   <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -399,37 +432,7 @@ if(isset($_GET['eid'])){
   <!-- <script src="dist/js/demo.js"></script> -->
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="dist/js/pages/dashboard.js"></script>
-  <!-- dropzonejs -->
-  <script src="plugins/dropzone/min/dropzone.min.js"></script>
-  <!-- jQuery -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <!-- Bootstrap 4 -->
-  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Select2 -->
-  <!-- extra link -->
-  <script src="plugins/select2/js/select2.full.min.js"></script>
-  <!-- Bootstrap4 Duallistbox -->
-  <script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
-  <!-- InputMask -->
-  <script src="plugins/moment/moment.min.js"></script>
-  <script src="plugins/inputmask/jquery.inputmask.min.js"></script>
-  <!-- date-range-picker -->
-  <script src="plugins/daterangepicker/daterangepicker.js"></script>
-  <!-- bootstrap color picker -->
-  <script src="plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-  <!-- Tempusdominus Bootstrap 4 -->
-  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-  <!-- Bootstrap Switch -->
-  <script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-  <!-- BS-Stepper -->
-  <script src="plugins/bs-stepper/js/bs-stepper.min.js"></script>
-  <!-- dropzonejs -->
-  <script src="plugins/dropzone/min/dropzone.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="dist/js/adminlte.min.js"></script>
-  <!-- AdminLTE for demo purposes -->
-  <script src="dist/js/demo.js"></script>
-  <script src="plugins/summernote/summernote-bs4.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- Page specific script -->
   <script>
     $(function () {
@@ -581,18 +584,39 @@ if(isset($_GET['eid'])){
       });
     });
   </script>
-<script>
-  $(function () {
-    // Summernote
-    $('#summernote').summernote()
+  <script>
+    $(function () {
+      // Summernote
+      $('#summernote').summernote()
 
-    // CodeMirror
-    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
-      mode: "htmlmixed",
-      theme: "monokai"
-    });
-  })
-</script>
+      // CodeMirror
+      CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+        mode: "htmlmixed",
+        theme: "monokai"
+      });
+    })
+  </script>
+  <script>
+   
+
+    $(document).ready(function(){
+          $('.btnmod1').click(function(){
+            let vid = $(this).data('id');
+
+            $.ajax({
+            url: 'api.php',
+            type: 'post',
+            data: {vid: vid},
+            success: function(response1){ 
+              $('.body1').html(response1);
+              $('#myModal').modal('show'); 
+              alert(vid);
+            }
+          });
+          });
+
+          });
+  </script>
 </body>
 
 </html>
