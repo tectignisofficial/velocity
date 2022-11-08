@@ -165,7 +165,7 @@ if(isset($_GET['eid'])){
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Modal Header</h4>
+            <h4 class="modal-title"> View Product</h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
 
           </div>
@@ -602,7 +602,6 @@ if(isset($_GET['eid'])){
             success: function(response1){ 
               $('.body1').html(response1);
               $('#myModal').modal('show'); 
-              alert(vid);
             }
           });
           });
