@@ -65,6 +65,14 @@ $page=substr($_SERVER['SCRIPT_NAME'],strrpos($_SERVER['SCRIPT_NAME'],"/")+1);
                     </p>
                   </a>
             </li>
+            <li class="nav-item">
+                  <a href="contact_us.php" class="nav-link <?= $page == 'contact_us.php' ? 'active':'' ?>">
+                  <i class="nav-icon fa-solid fa-key text-skyblue"></i>
+                    <p>
+                 Update Password
+                    </p>
+                  </a>
+            </li>
         </ul>
         </nav>
         <!-- /.sidebar-menu -->

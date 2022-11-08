@@ -10,10 +10,10 @@
                          $arr=mysqli_fetch_array($sql)
                         ?> 
                         <div class="col-md-7 col-sm-6 footer-widget">
-                          <!-- <img src="assets/img/logo.png" alt="" style=" width:100%"> -->
-                            <span for="" style="color:#fff">Jaggery improved immune system, it detoxify body, improves
+                          <img src="assets/img/logo.png" alt="" style=" width:50%">
+                            <p for="" style="color:#fff; margin-top: 20px;">Jaggery improved immune system, it detoxify body, improves
                                 digestive system. Raisin, Cashews, Turmeric & vegetable powders are rich source of major
-                                minerals & vitamins. This means the overall goof health.</span>
+                                minerals & vitamins. This means the overall goof health.</p>
                         </div>
                         <div class="col-md-3 col-sm-6 footer-widget">
                             <h5 class="widget-title">Products</h5>
