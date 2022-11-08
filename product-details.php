@@ -152,7 +152,7 @@ $categories=$_GET['categories'];
                     <div class="tab-pane fade show active" id="tab-product-desc" role="tabpanel"
                         aria-labelledby="tab-product-desc-tab">
                         <h4>Description</h4>
-                        <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['description'];?></a>
+                       <?php echo $arr['description'];?>
                     </div>
                     <?php }  ?>
 
