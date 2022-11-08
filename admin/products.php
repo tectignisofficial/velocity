@@ -339,10 +339,10 @@ if(isset($_GET['eid'])){
                           </td>                           
                           <td><img src="dist/img/images/<?php echo $row["file"]; ?>"></td>
                           <td>
-                            <a class="btn btn-primary btn-rounded btn-icon btnmod1"
-                              data-id="<?php echo $row["id"]; ?>">
-                              
-                              <i class="fa fa-eye"></i></a>
+                              <!-- <a class="btn btn-primary btn-rounded btn-icon btnmod1"
+                                data-id="<?php echo $row["id"]; ?>">
+                                
+                                <i class="fa fa-eye"></i></a> -->
 
                             <a class="btn btn-primary btn-rounded btn-icon"
                               href="products.php?eid=<?php echo $row['id']; ?>">
