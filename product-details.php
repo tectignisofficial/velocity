@@ -108,9 +108,9 @@ $categories=$_GET['categories'];
                         <h2 class="title"><?php echo $arr['product_name'] ?></h2>
                         <!-- /Product Title -->
                         <!-- Product Short Description -->
-                        <p>
-                            <a href="product_details.php?id=<?php echo $arr['id'] ?>"
-                                style="color:#000"><?php echo $arr['title'];?></a>
+                        <p style="color:#000"><?php echo $arr['title'];?>
+                 
+                             
                         </p>
                         <!-- Product Meta -->
                         <div class="row">
@@ -118,8 +118,8 @@ $categories=$_GET['categories'];
                                 <strong>Categories : </strong>
                             </div>
                             <div class="col-8">
-                                <a class="cat" href="product_details.php?id=<?php echo $arr['id'] ?>"
-                                    style="color:#000"><?php echo $arr['categories'];?></a>
+                       
+                                  <p  style="color:#000"><?php echo $arr['categories'];?> </p>
                             </div>
                         </div>
                         <div class="row">
@@ -127,8 +127,8 @@ $categories=$_GET['categories'];
                                 <strong>Tags : </strong>
                             </div>
                             <div class="col-8">
-                                <a href="product_details.php?id=<?php echo $arr['id'] ?>"
-                                    style="color:#000"><?php echo $arr['tag'];?></a>
+                               
+                                   <p style="color:#000"><?php echo $arr['tag'];?> </p>
                             </div>
                         </div>
 
@@ -152,7 +152,7 @@ $categories=$_GET['categories'];
                     <div class="tab-pane fade show active" id="tab-product-desc" role="tabpanel"
                         aria-labelledby="tab-product-desc-tab">
                         <h4>Description</h4>
-                        <a href="product_details.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['description'];?></a>
+                       <?php echo $arr['description'];?>
                     </div>
                     <?php }  ?>
 
