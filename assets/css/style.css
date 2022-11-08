@@ -486,7 +486,7 @@ html
 }
 
 body {
-  /* font-family: 'Montserrat', sans-serif !important; */
+  font-family: 'Montserrat', sans-serif !important;
   margin: 0;
   padding: 0;
   font-size: 15px;
@@ -622,7 +622,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 20px;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   line-height: 28px;
   color: #1D2228;
@@ -657,7 +657,7 @@ p {
   color: #515151;
 }
 a {
-  color: #9f4103;
+  color: #343a40;
   text-decoration: none;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -702,7 +702,7 @@ ol li {
   padding-left: 25px;
 }
 .ct-list li::before{
-  /* font-family: "Font Awesome 5 Free"; */
+  font-family: "Font Awesome 5 Free";
   content: "\f058";
   -webkit-font-smoothing: antialiased;
   font-style: normal;
@@ -733,12 +733,12 @@ blockquote {
   margin: 20px 0;
   border-left: 3px solid #9f4103;
   font-size: 18px;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 blockquote p{
   margin-bottom: 0;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
 }
 
@@ -1182,7 +1182,7 @@ table th{
   font-weight: 600;
   color: #fff;
   background-color: #1D2228;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 table {
   width: 100%;
@@ -1526,7 +1526,7 @@ table img{
   border-top-right-radius: 8px;
 }
 .navbar .menu-item .submenu .menu-item.menu-item-has-children>a::after {
-  /* font-family: "Font Awesome 5 Free"; */
+  font-family: "Font Awesome 5 Free";
   content: "\f054";
   -webkit-font-smoothing: antialiased;
   font-style: normal;
@@ -1661,7 +1661,7 @@ table img{
   font-weight: 700;
   font-size: 15px;
   margin-bottom: 5px;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 .cart-item-body a:hover{
   color: #E35901;
@@ -1889,7 +1889,7 @@ table img{
 
 .navbar-nav .menu-item-has-children>a::after,
 .sigma_aside ul .menu-item.menu-item-has-children>a::after {
-    /* font-family: "Font Awesome 5 Free"; */
+    font-family: "Font Awesome 5 Free";
   content: "\f078";
   -webkit-font-smoothing: antialiased;
   font-style: normal;
@@ -1956,7 +1956,7 @@ table img{
 }
 .sigma_ig-item::before{
   content: "\f16d";
-  /* font-family: "Font Awesome 5 Brands"; */
+  font-family: "Font Awesome 5 Brands";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -2043,7 +2043,7 @@ table img{
           transform: translateX(-15px);
 }
 .footer-widget ul li a::before{
-  /* font-family: "Font Awesome 5 Free"; */
+  font-family: "Font Awesome 5 Free";
   content: "\f054";
   -webkit-font-smoothing: antialiased;
   font-style: normal;
@@ -2292,7 +2292,7 @@ table img{
 .banner .title{
   font-size: 62px;
   line-height: 80px;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 20px;
 }
 .banner .subtitle{
@@ -2498,7 +2498,7 @@ table img{
 }
 .subheader h1{
   color: #9f4103;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 .breadcrumb {
@@ -3396,7 +3396,7 @@ table img{
 }
 .reply-link{
   color: #1D2228;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
 .reply-link:hover{
@@ -3516,7 +3516,7 @@ table img{
   border-radius: 8px;
 }
 .ct-ig-item::before{
-  /* font-family: "Font Awesome 5 Brands"; */
+  font-family: "Font Awesome 5 Brands";
   content: "\f16d";
   -webkit-font-smoothing: antialiased;
   font-style: normal;
@@ -3577,7 +3577,7 @@ table img{
   margin-bottom: 0;
 }
 .ct-testimonial-item span{
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #1D2228;
   font-size: 17px;
@@ -4107,7 +4107,7 @@ table img{
   transition: .3s;
 }
 .tooltip{
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 .media{
   margin-bottom: 10px;
@@ -4591,7 +4591,7 @@ td.quantity{
 
  .insta.style-6 .insta-slider .slick-prev:before,
  .insta.style-6 .insta-slider .slick-next:before{
-   /* font-family: "Font Awesome 5 Free"; */
+   font-family: "Font Awesome 5 Free";
    content: "\f30a";
   font-weight: 900;
   font-size: 22px;
