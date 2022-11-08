@@ -46,7 +46,7 @@ if(isset($_POST['vid'])){
         <div class="form-group row">
           <label class="col-sm-3 col-form-label"><b>Upload Image</b></label>
           <div class="col-sm-9">
-          <img src="dist/img/images/<?php echo $file; ?>" width="200" height="200">
+          <img src="dist/img/images/'.$arr['file'].'" width="200" height="200">
             <P class="file">'.$arr['file'].'</p>
           </div>
         </div>

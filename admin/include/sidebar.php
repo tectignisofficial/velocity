@@ -19,7 +19,7 @@ $page=substr($_SERVER['SCRIPT_NAME'],strrpos($_SERVER['SCRIPT_NAME'],"/")+1);
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
               <a href="index.php" class="nav-link <?= $page == 'index.php' ? 'active':'' ?>">
-                <i class="nav-icon fas fa-tachometer-alt text-red"></i>
+                <i class="nav-icon fas fa-tachometer-alt text-skyblue"></i>
                 <p>
                   Dashboard
                 </p>
@@ -43,7 +43,7 @@ $page=substr($_SERVER['SCRIPT_NAME'],strrpos($_SERVER['SCRIPT_NAME'],"/")+1);
            </li>
            <li class="nav-item">
              <a href="add_categories.php" class="nav-link <?= $page == 'add_categories.php' ? 'active':'' ?>">
-              <i class="nav-icon fa-solid fa-image text-skyblue"></i>
+              <i class="nav-icon fa-solid fas fa-list-alt text-skyblue"></i>
                <p>
              Add Categories
                </p>
@@ -59,14 +59,14 @@ $page=substr($_SERVER['SCRIPT_NAME'],strrpos($_SERVER['SCRIPT_NAME'],"/")+1);
            </li>
             <li class="nav-item">
                   <a href="contact_us.php" class="nav-link <?= $page == 'contact_us.php' ? 'active':'' ?>">
-                  <i class="nav-icon fa-solid fa-phone text-red"></i>
+                  <i class="nav-icon fa-solid fa-phone text-skyblue"></i>
                     <p>
                  Contact Us
                     </p>
                   </a>
             </li>
             <li class="nav-item">
-                  <a href="contact_us.php" class="nav-link <?= $page == 'contact_us.php' ? 'active':'' ?>">
+                  <a href="update_password.php" class="nav-link <?= $page == 'update_password.php' ? 'active':'' ?>">
                   <i class="nav-icon fa-solid fa-key text-skyblue"></i>
                     <p>
                  Update Password

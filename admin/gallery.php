@@ -13,34 +13,34 @@ $file=$_FILES['file']['name'];
 $tmp_name = $_FILES['file']['tmp_name']; 
 $loc="dist/img/images/".$file;
 move_uploaded_file($tmp_name, $loc);
-$filedet=$_POST['img'];
+$filedet=$_POST['imgg'];
   $id=$_GET['id'];
 
-  if(empty(($_FILES['file']['tmp_name'])) && ($_POST['img']) && ($_GET['id'])){
+  if(empty($_FILES['file']['tmp_name']) && ($_POST['imgg']) && ($_GET['id'])){
     $id=$_GET['id'];
     $dnk = $_POST['portImage'];
     
     $sql=mysqli_query($conn,"UPDATE `gallery` SET `title`='$title',`file`='$filedet' WHERE id='$id'");    
+    
     }
    
   else if(!empty($_FILES['file']['tmp_name']) && ($_POST['imgg']) || !empty($_FILES['file']['tmp_name']) && (empty($_POST['imgg']) && ($_GET['id']))){
     $id=$_GET['id'];
 move_uploaded_file($tmp_name, $loc);
-    $sql=mysqli_query($conn,"UPDATE `gallery` SET `title`='$title',`file`='$file' WHERE id='$id'");    
+    $sql=mysqli_query($conn,"UPDATE `gallery` SET `title`='$title',`file`='$file' WHERE id='$id'");   
+   
     }else{
 
 move_uploaded_file($tmp_name, $loc);
 $sql=mysqli_query($conn,"INSERT INTO `gallery`(`title`,`file`) VALUES ('$title','$file')");}
   
-  if($sql==1){
-     header("location:gallery.php");
-  }else{
-      mysqli_error($conn);
-  }
-
+if($sql==1){
+ header("location:gallery.php");
+}else{
+   mysqli_error($conn);
 }
 
-
+}
 
 
 if(isset($_GET['delid'])){
@@ -51,9 +51,9 @@ if(isset($_GET['delid'])){
   }
 }
 
-$productt_name='';
-$title='';
-$file='';
+$product_name="";
+$title="";
+$file="";
 if(isset($_GET['id'])){
   $sql=mysqli_query($conn,"select * from gallery where id='$_GET[id]'");
   $row=mysqli_fetch_array($sql);
@@ -191,7 +191,7 @@ if(isset($_GET['id'])){
                           <label class="col-sm-3 col-form-label"><b>Product Name</b></label>
                           <div class="col-sm-9">
                             <input type="text" class="form-control" name="title" placeholder="Product Name"
-                              value="<?php echo $productt_name; ?> " required>
+                              value="<?php echo $title; ?> " required>
                           </div>
                         </div>
 
@@ -256,7 +256,7 @@ if(isset($_GET['id'])){
                           <td><img src="dist/img/images/<?php echo $row["file"]; ?>"></td>
                           <td>
                             <a class="btn btn-primary btn-rounded btn-icon"
-                              href="gallery.php?id=<?php echo $row['id']; ?>" title="Edit Blog"><i
+                              href="gallery.php?id=<?php echo $row['id']; ?>" title="Edit"><i
                                 class="fa fa-edit"></i></a>
 
                             <a class="btn btn-danger btn-rounded btn-icon"

@@ -20,27 +20,31 @@ move_uploaded_file($tmp_name, $loc);
 $filedet=$_POST['img'];
   $id=$_GET['eid'];
 
-  if(empty(($_FILES['file']['tmp_name'])) && ($_POST['img']) && ($_GET['eid'])){
+  if(empty($_FILES['file']['tmp_name']) && ($_POST['img']) && ($_GET['eid'])){
     $id=$_GET['eid'];
     $dnk = $_POST['portImage'];
     
-    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`title`='$title',`categories`='$categories',`tag`='$tag',`file`='$file',`description`='$description' WHERE id='$id'");    
+    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`title`='$title',`categories`='$categories',`tag`='$tag',`file`='$filedet',`description`='$description' WHERE id='$id'");  
+   
     }
    
   else if(!empty($_FILES['file']['tmp_name']) && ($_POST['img']) || !empty($_FILES['file']['tmp_name']) && (empty($_POST['img']) && ($_GET['eid']))){
     $id=$_GET['eid'];
 move_uploaded_file($tmp_name, $loc);
-    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`title`='$title',`categories`='$categories',`tag`='$tag',`file`='$file',`description`='$description' WHERE id='$id'");    
+    $sql=mysqli_query($conn,"UPDATE `products` SET `product_name`='$product_name',`title`='$title',`categories`='$categories',`tag`='$tag',`file`='$file',`description`='$description' WHERE id='$id'"); 
+     
     }else{
 
 move_uploaded_file($tmp_name, $loc);
-$sql=mysqli_query($conn,"INSERT INTO `products`(`product_name`,`title`,`categories`,`tag`,`file`, `description`) VALUES ('$product_name','$title','$categories','$tag','$file','$description')");}
-  
-  if($sql==1){
-     header("location:products.php");
-  }else{
-      mysqli_error($conn);
-  }
+$sql=mysqli_query($conn,"INSERT INTO `products`(`product_name`,`title`,`categories`,`tag`,`file`, `description`) VALUES ('$product_name','$title','$categories','$tag','$file','$description')");
+ }
+ 
+ if($sql==1){
+  // echo '<script>alert("pppppppp")</script>';
+  header("location:products.php");
+}else{
+   mysqli_error($conn);
+}  
 
 }
 
@@ -313,9 +317,7 @@ if(isset($_GET['eid'])){
                           <th width="100px">Product Name</th>
                           <th width="300px">Title</th>
                           <th>Categories</th>
-
-                          <th>Image</th>
-                          <th>Description</th> 
+                          <th>Image</th>                    
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -335,9 +337,7 @@ if(isset($_GET['eid'])){
                           <td>
                             <?php echo $row["categories"]; ?>
                           </td> 
-                          <td>
-                            <?php echo $row["tag"]; ?>
-                          </td>
+                        
 
                           
                           <td><img src="dist/img/images/<?php echo $row["file"]; ?>"></td>
