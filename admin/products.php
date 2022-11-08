@@ -336,19 +336,11 @@ if(isset($_GET['eid'])){
                           </td>
                           <td>
                             <?php echo $row["categories"]; ?>
-                          </td> 
-                        
-
-                          
+                          </td>                           
                           <td><img src="dist/img/images/<?php echo $row["file"]; ?>"></td>
-                          <!-- <td>
-                            
-                          </td> -->
                           <td>
                             <a class="btn btn-primary btn-rounded btn-icon btnmod1"
-                              data-id="<?php echo $row["id"]; ?>" 
-                            
-                              >
+                              data-id="<?php echo $row["id"]; ?>">
                               
                               <i class="fa fa-eye"></i></a>
 
