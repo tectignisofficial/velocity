@@ -144,8 +144,7 @@ if(isset($_GET['delid'])){
                           </td>
                         </tr>
                         <?php $count++;   } ?>
-
-
+                      </tbody>
                     </table>
                   </div>
                 </div>
